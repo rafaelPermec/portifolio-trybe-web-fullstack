@@ -16,30 +16,30 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 2: Git & GitHub
 
-- [x] 2-1: _ O que é e para que serve?_
-- [x] 2-2: _ Entendendo os comandos _
-- [x] 2-3: _Internet - Entendendo como ela funciona _
+- [x] 2-1: _O que é e para que serve?_
+- [x] 2-2: _Entendendo os comandos_
+- [x] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução - HTML & CSS
 
-- [x] 3-1: _ HTML & CSS - Estruturas de página
-- [ ] 3-2: _ HTML & CSS - Primeiros passos em CSS _
-- [ ] 3-3: _ HTML & CSS - Seletores e posicionamento _
-- [ ] 3-4: _HTML Semántico _
+- [x] 3-1: _HTML & CSS - Estruturas de página
+- [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [ ] 3-4: _HTML Semántico_
 - [ ] 3-5: _[Projeto - HTML & CSS]()_
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [ ] 4-1: _ JavaScript - Primeiros passos _
+- [ ] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _ JavaScript - Lógica de Programação e Algoritmos _
-- [ ] 4-4: _ JavaScript - Objetos e funções_
+- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
-- [ ] 5-1: _ JavaScript - DOM e seletores _
-- [ ] 5-2: _ JavaScript - Trabalhando com elementos _
+- [ ] 5-1: _JavaScript - DOM e seletores_
+- [ ] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Meme Generator]()_
@@ -95,20 +95,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _ Components com estado _
+- [ ] 12-1: _Components com estado_
 - [ ] 12-2: _Eventos e formulários no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 13: React
 
-- [ ] 13-1: _ Melhorando o reuso de componentes: props.children e PropTypes_
+- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [ ] 13-2: _Ciclo de vida de componentes em React_
 - [ ] 13-3: _React Router_
 - [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: _ Metodologías Ágeis _
+- [ ] 14-1: _Metodologías Ágeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 15: Testes em React
@@ -162,7 +162,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
 - [ ] 22-2: _Normalizaçã, Formas Normais e Dumps_
-- [ ] 22-2: _ Transformando ideias em um modelo de banco de dados - Parte 2_
+- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
 - [ ] 22-3: _[Projeto - One For All]()_
 
 ##### Bloco 23: Introdução - NoSQL
@@ -241,15 +241,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 35: Introdução - Ciência da Computação
 
-- [ ] 35-1: _Arquitetura de Computadores _
+- [ ] 35-1: _Arquitetura de Computadores_
 - [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e seguranÃ§a_
+- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
 - [ ] 35-4: _[Projeto - Explorando os protocolos]()_
 
 ##### Bloco 36: Python
 
 - [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções _
+- [ ] 35-2: _Testes e Exceções_
 - [ ] 35-3: _Entrada e Saí­da de dados_
 - [ ] 36-4: _Entrada e Saí­da de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
