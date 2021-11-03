@@ -1,0 +1,13 @@
+h1, p {
+    text-align: center;
+}
+li:hover {
+    background-color: rgb(108, 185, 196);
+}
+li:active {
+    font-family: monospace;
+}
+li {
+    list-style: armenian;
+    text-align: center;
+}
