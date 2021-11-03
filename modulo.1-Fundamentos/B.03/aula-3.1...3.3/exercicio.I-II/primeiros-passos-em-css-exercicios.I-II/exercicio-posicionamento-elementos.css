@@ -7,10 +7,10 @@
   }
   
   .goomba {
-    width: 150px;
+    width: 110px;
     position: absolute;
-    top: 400px;
-    left: 330px;
+    top: 390px;
+    left: 350px;
   }
   
   .baloon {

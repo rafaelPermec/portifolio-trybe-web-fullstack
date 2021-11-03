@@ -1,0 +1,33 @@
+div:nth-of-type(1):hover {
+   background-color: #104547;
+   color: blanchedalmond;
+   text-align: center;
+}
+div:nth-of-type(2):hover {
+    background-color: #4B5358;
+    color: blanchedalmond;
+    text-align: center;
+ }
+ div:nth-of-type(3):hover {
+     font-size: 50px;
+    background-color: #727072;
+    color: blanchedalmond;
+    text-align: center;
+ }
+ div:nth-of-type(4):hover {
+    background-color: #AF929D;
+    color: blanchedalmond;
+    text-align: center;
+ }
+ div:nth-of-type(5):hover {
+    background-color: #D2D6EF;
+    color: blanchedalmond;
+    text-align: center;
+ }
+h3:active {
+     font-family: monospace;
+ }
+
+div:nth-of-type(odd){
+    font-style: italic;
+}
