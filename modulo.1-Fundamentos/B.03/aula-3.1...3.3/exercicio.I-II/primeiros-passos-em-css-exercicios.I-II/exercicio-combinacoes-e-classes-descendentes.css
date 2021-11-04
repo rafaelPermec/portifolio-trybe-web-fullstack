@@ -1,0 +1,25 @@
+ol {
+    background-color: orange;
+}
+ol li:nth-of-type(2n) {
+    color: rgb(26, 73, 26);
+}
+ol li:nth-of-type(2n+1){
+    text-transform: uppercase;
+}
+h1, h3 {
+    color: rgb(185, 64, 20);
+}
+h1, h3 em{
+    font-size: 40px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+li{
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
