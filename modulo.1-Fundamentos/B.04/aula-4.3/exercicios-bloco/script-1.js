@@ -9,17 +9,18 @@ n = 5
 ***** 
 
 */
+let n = 7;
 
-let h = 5;
-let w = h;
-let s = "*";
-
-    for(i = 0; i < h; i += 1){
-        if(s += h[i]){
+for (let linha = 1 ; linha <= n; linha += 1){  
         
-        console.log(w * "*");
-        }
-    }
+     console.log('*'); 
+        for (let coluna = 1; coluna <= n; coluna += 1){
+           
+        }       
+    
+    
+}
+
 
 
 
