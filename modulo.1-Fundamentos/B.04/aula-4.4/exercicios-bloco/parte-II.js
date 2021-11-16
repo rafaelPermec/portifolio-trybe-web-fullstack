@@ -38,7 +38,9 @@ function menorInteiro (array){
 Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
 Valor esperado no retorno da função: Fernanda . */
 
-function maiorNome (){
+function maiorNome (arrayNomes){
+
+    /* Duvida!!!!*/
 
 }
 
@@ -60,7 +62,14 @@ Valor de teste: N = 5 .
 Valor esperado no retorno da função: 1+2+3+4+5 = 15 .
  */
 
-
+function somaAteN (n){
+let soma = 0;
+    for (let i = 0; i <= n; i += 1){
+        soma = soma + i;
+    }
+    console.log(soma);
+}
+somaAteN (10);
 
 /* 7 - Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
 
@@ -70,3 +79,14 @@ verificaFimPalavra('trybe', 'be') ;
 Retorno esperado: true
 verificaFimPalavra('joaofernando', 'fernan') ;
 Retorno esperado: false */
+
+function verificaFimPalavra (word, end){
+if (word.includes(end)){
+    console.log(true);
+} else if (!word.includes(end)){
+    console.log(false);
+}
+}
+verificaFimPalavra('joaofernando', 'fernan');
+
+/* Duvida */
