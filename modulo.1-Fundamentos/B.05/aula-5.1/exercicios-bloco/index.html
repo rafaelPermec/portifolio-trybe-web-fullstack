@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Exercício 5.1</title>
-    <link src='stylesheet' href='style.css'>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
   </head>
   <body>
     <header> 
@@ -25,23 +25,27 @@
         - document.getElementsByTagName()
         1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício) */
 
+      document.getElementsByTagName('p')[0].innerText = 'Daqui há um dois anos, pretendo estar trabalhando na XP inc como programador, em estado remoto, diretamente de Aukland, Nova Zelandia, enquanto faço minha faculdade de Computer Science/Arts na Universidade de Aukland!'
 
        /*  2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)). */
-
+      
+      document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
 
         /* 3. Crie uma função que mude a cor do quadrado vermelho para branco. */
 
-
+      document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';  
+      
         /* 4. Crie uma função que corrija o texto da tag <h1>. */
 
-
+      document.getElementsByClassName('title')[0].innerText = "Exercício 5.1 - Javascript";
 
         /* 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo. */
-
+        
+      document.getElementsByTagName('p')[0].style.textTransform = 'uppercase';
 
         /* 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
 
-
+      console.log(document.getElementsByClassName('center-content')[0].innerHTML);
        
     </script>
   </body>
