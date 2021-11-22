@@ -20,16 +20,25 @@
       </section>
       <script> 
       
-      </script>
-    </main>
-</body>
-</html>
-
-
-<!-- E a prática? Aqui!
+/*       E a prática? Aqui!
 
     1. Crie um irmão para elementoOndeVoceEsta .
     2. Crie um filho para elementoOndeVoceEsta .
     3. Crie um filho para primeiroFilhoDoFilho .
-    4. A partir desse filho criado, acesse terceiroFilho .
- -->
+    4. A partir desse filho criado, acesse terceiroFilho . */
+
+    var section = document.createElement('section');
+    document.getElementById('elementoOndeVoceEsta').parentElement.appendChild(section);
+    var division = document.createElement('div');
+    document.getElementById('elementoOndeVoceEsta').appendChild(division);
+    var paragrafo = document.createElement('p');
+    document.getElementById('primeiroFilhoDoFilho').appendChild(paragrafo);
+
+    var retorno = document.getElementsByTagName('p')[0].parentElement.parentElement.nextElementSibling;
+    console.log(retorno);
+  
+
+      </script>
+    </main>
+</body>
+</html>
