@@ -1,0 +1,49 @@
+<!-- Vamos praticar um pouco, criando uma tela de login? 🔥
+1 - Adicione os campos de entrada para email e senha.
+2 - Adicione um checkbox com o texto Lembre-me .
+3 - Adicione um botão com o texto Entrar .
+4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha.
+5 - Adicione o atributo required para os campos de email e senha.
+6 - Adicione o atributo autocomplete="off" para o campo de email.
+7 - Adicione o atributo autofocus para o campo de email. -->
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login e Senha</title>
+    </head>
+
+    <body>
+        <h1>Crie sua conta:</h1>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <label for="login-input">Digite seu e-mail:</label><br>
+            <input id="login-input" type="email" placeholder="Email" name="login" required autocomplete="off" autofocus> <br><br>  
+
+            <label for="senha-input">Digite sua senha:</label><br>
+            <input id="senha-input" type="password" placeholder="Senha" name="senha"required><br><br> 
+
+            <label for="checkbox">Lembre-me</label><br>   
+            <input id="checkbox" type="checkbox" value="lembrar" name="Lembre-me" checked><br><br> 
+
+            <button type="submit" >Entrar</button><br><br>  
+            
+            <label for="feedback-input">Queremos saber sobre você:</label><br><br>
+            <textarea id="feedback-input" placeholder="O que você está pensando?" name="feedback" cols="50" rows="20"></textarea><br><br>
+
+            <p>Sua foto de perfil:</p>
+            <input type="file" id="envio-arquivo">
+
+            <p>Qual o seu estado?</p>
+            <select name="estado" id="dropdown-estado">
+                <option>São Paulo</option>
+                <option>Minas Gerais</option>
+                <option>Rio de Janeiro</option>
+                <option>Bahia</option>
+                <option>Amazonas</option>
+            </select>
+            <p>Qual sua nota para a tela de login?</p>
+            <input id="range" type="range" min="1" max="10">
+        </form>
+    </body>
+</html>
