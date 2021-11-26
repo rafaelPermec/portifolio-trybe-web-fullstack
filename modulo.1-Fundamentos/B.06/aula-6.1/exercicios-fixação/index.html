@@ -15,10 +15,10 @@
     </head>
 
     <body>
-        <h1>Seu login e senha:</h1>
+        <h1>Crie sua conta:</h1>
         <form action="" method="GET" enctype="multipart/form-data">
-            <label for="login-input">Digite seu login:</label><br>
-            <input id="login-input" type="text" placeholder="Login" name="login" required autocomplete="off" autofocus> <br><br>  
+            <label for="login-input">Digite seu e-mail:</label><br>
+            <input id="login-input" type="email" placeholder="Email" name="login" required autocomplete="off" autofocus> <br><br>  
 
             <label for="senha-input">Digite sua senha:</label><br>
             <input id="senha-input" type="password" placeholder="Senha" name="senha"required><br><br> 
@@ -27,19 +27,19 @@
 
             <button type="submit" >Entrar</button><br><br>  
             
-            <label for="feedback-input">Deixe seu feedback:</label><br>
-            <textarea id="feedback-input" placeholder="Deixe aqui o seu feedback:" name="feedback" cols="50" rows="20"></textarea><br><br>
+            <label for="feedback-input">Queremos saber sobre você:</label><br><br>
+            <textarea id="feedback-input" placeholder="O que você está pensando?" name="feedback" cols="50" rows="20"></textarea><br><br>
 
-            <p>Envie seus documentos:</p>
+            <p>Sua foto de perfil:</p>
             <input type="file" id="envio-arquivo">
 
             <p>Qual o seu estado?</p>
             <select name="estado" id="dropdown-estado">
-                <option>SP</option>
-                <option>MG</option>
-                <option>RJ</option>
-                <option>BA</option>
-                <option>AM</option>
+                <option>São Paulo</option>
+                <option>Minas Gerais</option>
+                <option>Rio de Janeiro</option>
+                <option>Bahia</option>
+                <option>Amazonas</option>
             </select>
             <p>Qual sua nota para a tela de login?</p>
             <input id="range" type="range" min="1" max="10">
