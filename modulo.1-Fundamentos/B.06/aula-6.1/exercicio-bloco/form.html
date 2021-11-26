@@ -1,0 +1,132 @@
+<!-- Criando um formulário de currículo.
+Crie um arquivo HTML chamado form.html para o formulário.
+Caso julgue necessário, crie estilos CSS para o seu formulário, de acordo com a sua imaginação. Coloque-os em um arquivo styles.css .
+Crie também um arquivo script.js para seu código JavaScript .
+Vamos criar um formulário de cadastro de currículo com base na especificação a seguir:
+Faça as validações inicialmente pelo HTML
+Crie um <fieldset> para os seguintes dados pessoais:
+Nome - Texto
+Limite de 40 caracteres
+Campo obrigatório
+Email - Texto
+Limite de 50 caracteres
+Campo obrigatório
+CPF - Texto
+Limite de 11 caracteres
+Campo obrigatório
+Endereço - Texto
+Limite de 200 caracteres
+Campo obrigatório
+Cidade - Texto
+Limite de 28 caracteres
+Campo obrigatório
+Estado - Select
+Todos os estados do Brasil
+Utilize estruturas de repetição via JavaScript para gerar os <option>
+Campo obrigatório
+Tipo - Radio Button
+Casa, Apartamento
+Campo obrigatório
+Crie outro <fieldset> para dados do seu último emprego
+Resumo do currículo - TextArea
+Limite de 1000 caracteres
+Campo obrigatório
+Cargo - Texto
+Limite de 40 caracteres
+Campo obrigatório
+Descrição do cargo - Texto
+Limite de 500 caracteres
+Campo obrigatório
+Data de início - Texto
+Verificar o formato da data dd/mm/aaaa .
+O dia deve ser > 0 e <= 31.
+O mês deve ser > 0 e <= 12.
+O ano não pode ser negativo.
+Caso alguma das condições seja inválida no momento do envio do formulário, exibir via alert uma mensagem de erro contextualizada.
+Campo obrigatório
+Logo abaixo do formulário, crie um botão que:
+Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() . Note que isso vai impedir as validações do HTML ao fazer o submit
+Implemente, agora, no Javascript , as validações que foram pedidas ao longo da montagem do formulário.
+Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
+Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.
+Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Crie seu CV !</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Cadastre seu Curriculo:</h1>
+
+        <fieldset>
+
+            <form>
+            <input id="nome-input" class=""  type="text" max="40" placeholder="Nome" required autofocus>
+            </form>
+
+            <form>
+            <input id="email-input" class="" type="email" max="50" placeholder="Email" required>
+            </form>
+
+            <form>
+            <input id="cpf-input" class="" type="text" max="11" placeholder="CPF" required>
+            </form>
+
+            <form>
+            <input id="adress-input" class="" type="text" max="200" placeholder="Endereço" required>
+            </form>
+            
+            <form>
+            <input id="city-input" class="" type="text" max="28" placeholder="Cidade" required>
+            </form>
+
+            <form>
+            <label for="estado-input">Selecione seu Estado:</label>
+            <select id="estado-input">
+            
+
+            </select>
+            </form>
+
+            <form for="radio-input" required>
+                <label for="radio-input">Casa</label>
+                <input id="radio-input" value="casa" name="casa" type="radio">
+                <label for="apto">Apartamento</label>
+                <input id="radio-input" value="apto" name="apto" type="radio">
+            </form>
+
+        </fieldset>
+
+        <fieldset>
+            
+            <form>
+            <label for="textarea">Resumo de Curriculo (max. 1000 caracteres):</label><br>
+            <textarea id="textarea" placeholder="Escreva aqui!" cols="50" rows="10" maxlength="1000" required></textarea>
+            </form>
+
+            <form>
+            <input id="job-input" class="" type="text" max="40" placeholder="Cargo" required>
+            </form>
+
+            <form>
+            <input id="job-description-input" class="" type="text" max="500" placeholder="Descrição do Cargo" required>
+            </form>
+
+            <form>
+            <input id="job-description-input" class="" type="date" max="500" placeholder="Descrição do Cargo" required>
+            </form>
+
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Enviar</button>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
