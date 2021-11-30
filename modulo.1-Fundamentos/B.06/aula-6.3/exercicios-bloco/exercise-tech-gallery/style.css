@@ -31,12 +31,13 @@
 #titulo {
   display: flex;
   padding: 20px;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 #titulo p {
   font-family: 'Ubuntu';
   font-size: 30px;
-  text-align: center;
 }
 
 #grid-tech-container {
