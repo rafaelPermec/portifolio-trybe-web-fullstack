@@ -1,0 +1,25 @@
+.box {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 50px;
+    min-height: 60px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 30%;
+  }
+
+  .box-container {
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    /* ADICIONE AQUI SEUS TESTES */
+    /* Teste as possibilidades ( center , flex-start , flex-end , stretch , space-around e space-between ) para a propriedade align-content . */
+     align-content: center;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: stretch; */
+  }
