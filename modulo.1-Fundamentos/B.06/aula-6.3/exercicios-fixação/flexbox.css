@@ -1,0 +1,23 @@
+/* 1 - Teste as possibilidades ( row , column , row-reverse e column-reverse ) para a propriedade flex-direction .
+2 - Teste as possibilidades ( wrap e nowrap ) para a propriedade flex-wrap .
+3 - Teste as possibilidades para a propriedade flex-flow . */
+.box {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 50px;
+    height: 60px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 30%;
+  }
+
+  .box-container {
+    background-color: #0fa36b;
+    display: flex;
+    /* ADICIONE AQUI SEUS TESTES */
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-flow: column-reverse wrap-reverse;
+  }
+  
