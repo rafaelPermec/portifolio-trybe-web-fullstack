@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+}
+
+/*      HEADER */
+#container-titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#container-titulo > h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+#funcionamento {
+  padding: 12px;
+  margin: 20%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(121 , 121 , 121);
+  border-radius: 25px;
+  color: whitesmoke;
+  box-shadow: 5px 5px 4px 1px rgb(136 , 136 , 136);
+}
+
+/*      SECTION */
+#container-tarefa {
+  text-align: center;
+}
+
+#texto-tarefa {
+  width: 300px;
+  height: 18px;
+}
+
+#container-botoes {
+  display: flex;
+  justify-content: space-around;
+  margin: 35px auto;
+  width: 10%;
+}
+
+#container-botoes > button {
+  border: 0;
+  margin: 0 2px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(121 , 121 , 121);
+  border-radius: 15px;
+  color: whitesmoke;
+}
+
+#container-botoes > button:hover {
+  background-color: rgb(30 , 32 , 32);
+}
+
+/*    ARTICLE */
+.sua-lista {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container-lista {
+  text-align: left;
+  border: 1px solid black;
+  margin-left: 25%;
+  margin-right: 25%;
+  cursor: pointer;
+  max-width: 50%;
+}
+
+#lista-tarefas {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px;
+  box-shadow: 5px 5px 4px 1px rgb(36 , 36 , 36);
+}
+
+li {
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.marca-texto {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+/*  FOOTER */
+
+#footer-container > button {
+  border: 0;
+  margin: 0 2px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(121 , 121 , 121);
+  border-radius: 20px;
+  color: whitesmoke;
+}
+
+#footer-container > button:hover {
+  background-color: rgb(30 , 32 , 32);
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px auto;
+  width: 20%;
+}
