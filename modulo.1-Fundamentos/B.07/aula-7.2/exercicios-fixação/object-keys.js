@@ -17,6 +17,7 @@ const student2 = {
 
 function keyObjects (object) {
   const array = Object.keys(object);
+  console.table(Object.entries(object));
   for (index in array) {
     console.log(`${index}: ${array[index]} em um nível ${object[array[index]]}`)
   }
