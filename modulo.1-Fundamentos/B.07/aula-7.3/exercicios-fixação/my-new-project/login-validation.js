@@ -1,4 +1,3 @@
-// loginValidation.js
 const greetingMessage = (user) => {
   return `Hello, ${user}! Que bom ter você de volta`;
 };
@@ -22,4 +21,12 @@ const verifyCredentials = ({ userName, password }) => {
 
 const { userName, password } = user;
 
-module.exports = { greetingMessage, loginErrorMessage, verifyCredentials }
+const multiplyByTwo = (number) => {
+  if (!number) {
+    throw new Error('number é indefinido');
+  }
+  return number * 2;
+};
+
+
+module.exports = { greetingMessage, loginErrorMessage, verifyCredentials, multiplyByTwo,  }

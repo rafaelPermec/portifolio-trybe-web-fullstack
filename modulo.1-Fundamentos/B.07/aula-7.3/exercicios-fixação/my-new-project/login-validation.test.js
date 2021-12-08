@@ -3,6 +3,7 @@ const {
   greetingMessage,
   loginErrorMessage,
   verifyCredentials,
+  multiplyByTwo,
 } = require("./login-validation.js");
 
 describe("a função verifyCredentials()", () => {
@@ -33,4 +34,14 @@ describe("a função verifyCredentials()", () => {
       "Pessoa usuária 'Bob' não encontrada, tente novamente!"
     );
   });  
+});
+
+test('testa se multiplyByTwo retorna o resultado da multiplicação', () => {
+  expect(multiplyByTwo(4)).toBe(8);
+});
+test('testa se é lançado um erro quando number é indefinido', () => {
+  expect(() => { multiplyByTwo() }).toThrow();
+});
+test('testa se a mensagem de erro é "number é indefinido"', () => {
+  expect(() => { multiplyByTwo() }).toThrowError(new Error('number é indefinido'));
 });
