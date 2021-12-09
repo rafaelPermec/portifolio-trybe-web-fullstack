@@ -12,7 +12,7 @@ const breakfast = () => 'Bora tomar café!!';
 const sleepHour = () => 'Partiu dormir!!';
 
 const doingThings = (func) => {
-  console.log(func());
+  console.group(func());
 };
 
 doingThings(wakeUp);
