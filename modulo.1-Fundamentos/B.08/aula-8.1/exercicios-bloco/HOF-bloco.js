@@ -29,7 +29,7 @@ xpEmployees(4, 'Tabata Amaral');
 xpEmployees(5, 'Lucas Abreu');
 xpEmployees(6, 'Kamila Hydalgo');
 xpEmployees(7, 'Higor Anjos');
-xpEmployees(8, 'Rhennan Zimmermann');
+xpEmployees(8, 'Rhennan Zimmer');
 xpEmployees(9, 'Luciana Bischoff');
 xpEmployees(10, 'Matheus Teles');
 
@@ -41,7 +41,8 @@ const sorteio = () => {
 let num = Math.round(Math.random() * (dataBase.length - 1));
 
   let nome = dataBase[num].employee.nome;
-  return `Parabéns, você ganhou o sorteio, ${nome}!!`;
+  let email = dataBase[num].employee.email;
+  return `Parabéns, você ganhou o sorteio, ${nome}!! Já mandamos o curso gratuito da Finclass para o e-mail: ${email} !! PS: Confira sua caixa de Spam :D`;
     
 };
 
