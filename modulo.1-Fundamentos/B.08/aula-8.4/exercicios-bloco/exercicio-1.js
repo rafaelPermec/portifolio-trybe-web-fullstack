@@ -8,4 +8,10 @@ const arrays = [
 
 function flatten() {
   // escreva seu código aqui
-}
+  let bigArray =  arrays
+  .reduce( (acc, cur) => acc + cur )
+  .split(',');
+  return bigArray;
+};
+
+console.log(flatten());
