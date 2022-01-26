@@ -5,6 +5,9 @@
 /public
 /.pnp
 .pnp.js
+/src/reportWebVitals.js
+/src/setupTests.js
+/src/logo.svg
 
 # testing
 /coverage
@@ -19,8 +22,10 @@
 .env.test.local
 .env.production.local
 
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 package-lock.json
+README.md

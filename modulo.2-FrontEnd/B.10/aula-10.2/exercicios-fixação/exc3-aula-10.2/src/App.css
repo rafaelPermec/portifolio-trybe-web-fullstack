@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 8px rgb(80, 79, 79);
+  border-radius: 35px;
+  padding: 2rem;
+  margin: 2rem
+}
+
+.name {
+  font-size: 35px;
+}
+
+.img {
+  display: flex;
+  width: 10rem;
+  border-radius: 100%;
+}
