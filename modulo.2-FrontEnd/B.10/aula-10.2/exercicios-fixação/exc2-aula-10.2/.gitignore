@@ -2,9 +2,13 @@
 
 # dependencies
 /node_modules
-/public
 /.pnp
 .pnp.js
+/public/favicon.ico
+/public/logo192.png
+/public/logo512.png
+/public/manifest.json
+/public/robots.txt
 /src/reportWebVitals.js
 /src/setupTests.js
 /src/logo.svg
