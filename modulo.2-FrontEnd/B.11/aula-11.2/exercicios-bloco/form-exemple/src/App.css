@@ -52,7 +52,7 @@
   margin: 1rem;
 }
 
-.data-flow__conteiner input[type = 'text'], input[type = 'email'] {
+.data-flow__conteiner input[type='text'], input[type='email'] {
   width: calc(20vw + 1.5rem);
 }
 
@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.apto-casa, .apto-casa input {
+.aptoCasa, .aptoCasa input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,4 +71,12 @@
   text-decoration: underline;
   font-size: 0.8rem;
   margin: 0.5rem;
+}
+
+.UF {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
