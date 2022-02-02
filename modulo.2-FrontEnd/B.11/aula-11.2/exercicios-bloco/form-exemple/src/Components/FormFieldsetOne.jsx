@@ -21,11 +21,18 @@ class FormFieldsetOne extends Component {
     }
   }
 
-  handleInput({ target }) {
+  handleInput(event) {
+    const { target } = event;
     const { name, value } = target;
-  
+
+    if (name === 'endereço' && /[!@#$%^&*(),.?":{}|<>]/g.test(value) ) {
+      return alert('Endereço inválido!')
+    } if (name === 'CPF' && /[^0-9 \-.]+/igm.test(value) ) {
+      return alert('CPF inválido!');     
+    }  
+
     this.setState({
-      [name]: value,
+      [name]: value.toUpperCase(),
     })
 
   }
