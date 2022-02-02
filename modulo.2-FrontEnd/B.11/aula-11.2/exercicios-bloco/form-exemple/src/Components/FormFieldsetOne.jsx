@@ -11,7 +11,7 @@ class FormFieldsetOne extends Component {
     this.handleInput = this.handleInput.bind(this)
 
     this.state = { 
-      nome: ''.toUpperCase(),
+      nome: '',
       email: '',
       CPF: '',
       endereço: '',
