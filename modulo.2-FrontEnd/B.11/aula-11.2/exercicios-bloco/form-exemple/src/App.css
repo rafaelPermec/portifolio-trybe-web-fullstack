@@ -56,12 +56,19 @@
   width: calc(20vw + 1.5rem);
 }
 
-.radio-btn .apto-casa {
+.radio-btn  {
+  display: flex;
+  flex-direction: column;
+  margin: 0.1rem auto;
+  text-align: center;
+}
+
+.apto-casa, .apto-casa input {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  flex-direction: row;
   text-decoration: underline;
   font-size: 0.8rem;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0.5rem;
 }
