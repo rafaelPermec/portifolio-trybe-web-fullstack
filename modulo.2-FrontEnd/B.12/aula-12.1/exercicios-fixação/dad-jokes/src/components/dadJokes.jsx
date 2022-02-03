@@ -1,3 +1,5 @@
+import React from 'react'
+
 class DadJoke extends React.Component {
   constructor() {
     super();
@@ -43,7 +45,7 @@ class DadJoke extends React.Component {
 
   render() {
     const { storedJokes } = this.state;
-    const loadingElement = <span>Loading...</span>;
+    // const loadingElement = <span>Loading...</span>;
 
     return (
       <div>
@@ -57,3 +59,5 @@ class DadJoke extends React.Component {
     );
   }
 }
+
+export default DadJoke;
