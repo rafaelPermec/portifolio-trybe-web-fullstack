@@ -16,7 +16,7 @@ class App extends Component {
           />
           <Route path="/about" component={ About } />
           <Route exact path="/" component={ Home } />
-          <Route exact path='/strict-acess' component={ StrictAccess } />
+          <Route exact path='/strict-acess' router={(this.props)} />
         </Switch>
         <div>
           <Link to="/">Home</Link><br />
