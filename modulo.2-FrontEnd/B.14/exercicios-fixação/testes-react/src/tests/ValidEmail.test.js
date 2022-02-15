@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import ValidEmail from './ValidEmail';
+import ValidEmail from '../ValidEmail';
 
 test('Testando um componente, caso o email seja válido.', () => {
   const EMAIL_USER = 'email@email.com';
