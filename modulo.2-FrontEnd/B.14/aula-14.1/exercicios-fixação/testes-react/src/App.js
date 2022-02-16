@@ -9,19 +9,20 @@ class App extends Component {
     this.state = {
       email: '',
       saveEmail: '',
+      firstTry: false,
     };
   }
 
   changeEmail(value) {
-    this.setState({ email: value });
+      this.setState({ email: value });
   }
 
   changeSaveEmail(value) {
-    this.setState({ saveEmail: value, email: '' });
+    this.setState({ firstTry: true, saveEmail: value, email: '' });
   }
 
   render() {
-    const { email, saveEmail } = this.state;
+    const { email, saveEmail, firstTry } = this.state;
     return (
       <div className="App">
         <label htmlFor="id-email">
@@ -41,7 +42,8 @@ class App extends Component {
           onClick={ () => this.changeSaveEmail(email) }
         />
         <input id="btn-id" type="button" value="Voltar" />
-        <ValidEmail email={ saveEmail } />
+        {firstTry && <ValidEmail email={ saveEmail } />}
+        
       </div>
     );
   }
