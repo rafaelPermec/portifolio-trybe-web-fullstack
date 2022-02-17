@@ -14,7 +14,7 @@ class App extends React.Component {
     this.setState({ [name]: value });
   }
 
-  render() {
+render() {    
     const { nome, email } = this.state;
 
     return (
