@@ -1,0 +1,13 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# VSCode repo settings
+.vscode
+
+package-lock.json
+package.json
+.eslintcache
+.eslintignore
+.eslintrc.json
