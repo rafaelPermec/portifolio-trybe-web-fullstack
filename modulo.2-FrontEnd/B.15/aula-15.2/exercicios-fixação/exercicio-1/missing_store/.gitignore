@@ -6,7 +6,6 @@
 # VSCode repo settings
 .vscode
 
-package-lock.json
 package.json
 .eslintcache
 .eslintignore
