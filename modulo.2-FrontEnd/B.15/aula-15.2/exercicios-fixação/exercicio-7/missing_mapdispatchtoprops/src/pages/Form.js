@@ -92,6 +92,10 @@ class Form extends React.Component {
   }
 }
 
+const mapDispatchToProps = (dispatch) => ({
+  selectedOmega: (mutant) => dispatch(showMutant(mutant)),
+});
+
 Form.propTypes = {
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
