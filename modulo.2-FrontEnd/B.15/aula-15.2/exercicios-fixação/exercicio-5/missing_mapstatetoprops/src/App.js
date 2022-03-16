@@ -90,6 +90,11 @@ class App extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => ({
+  receiveIngredients: state.spiedIngredients.ingredients,
+  receiveOrder: state.spiedOrder.order,
+});
+
 App.propTypes = {
   receiveIngredients: PropTypes.arrayOf(PropTypes.string).isRequired,
   receiveOrder: PropTypes.arrayOf(PropTypes.string).isRequired,
