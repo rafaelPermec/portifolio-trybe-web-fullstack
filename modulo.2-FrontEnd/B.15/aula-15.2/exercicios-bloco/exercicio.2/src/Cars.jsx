@@ -2,10 +2,13 @@ import React from 'react';
 import carBlue from './images/carBlue.jpeg';
 import carRed from './images/carRed.jpeg';
 import carYellow from './images/carYellow.jpeg';
+import { connect } from 'react-redux';
+import { moveCar } from './redux/actionCreators';
 
-export default function Cars({
+
+const Cars = ({
   redCar, blueCar, yellowCar, moveCar,
-}) {
+}) => {
   return (
     <div>
       <div>
@@ -23,3 +26,14 @@ export default function Cars({
     </div>
   );
 }
+
+const mapStateToProps = (state) => ({
+  redCar: state.cars.red,
+  blueCar: state.cars.blue,
+  yellowCar: state.cars.yellow,
+})
+
+const mapDispatchToProps = ({ moveCar });
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cars);
