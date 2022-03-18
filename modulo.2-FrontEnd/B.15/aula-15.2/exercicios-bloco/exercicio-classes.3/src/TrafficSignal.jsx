@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import redSignal from './images/redSignal.jpeg';
 import greenSignal from './images/greenSignal.jpeg';
 import yellowSignal from './images/yellowSignal.jpeg';
+import { changeSignal } from './redux/actionCreators';
 
 class TrafficSignal extends React.Component {
 
@@ -25,9 +27,9 @@ class TrafficSignal extends React.Component {
     return (
       <div>
         <div className="button-container">
-          <button type="button">Red</button>
-          <button type="button">Yellow</button>
-          <button type="button">Green</button>
+          <button onClick={ () => changeSignal('red') } type="button">Red</button>
+          <button onClick={ () => changeSignal('yellow') } type="button">Yellow</button>
+          <button onClick={ () => changeSignal('green') } type="button">Green</button>
         </div>
         <img className="signal" src={this.renderSignal(signalColor)} alt="" />
       </div>
@@ -35,4 +37,10 @@ class TrafficSignal extends React.Component {
   }
 }
 
-export default TrafficSignal;
+const mapStateToProps = (state) => ({
+  signalColor: state.trafficReducer.signal.color,
+});
+
+const mapDispatchToProps = ({ changeSignal })
+
+export default connect(mapStateToProps, mapDispatchToProps)(TrafficSignal);
