@@ -8,3 +8,5 @@ export const getPostsBySubreddit = (subreddit) => (
         .then((json) => (response.ok ? Promise.resolve(json) : Promise.reject(json)))
     ))
 );
+
+  // Importante para projeto!
