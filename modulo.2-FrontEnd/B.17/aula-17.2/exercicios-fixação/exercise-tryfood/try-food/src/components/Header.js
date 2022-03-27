@@ -5,11 +5,9 @@ import TryFood from '../images/tryfood.png';
 function Header() {
   const { orderList, showCart, updateCart } = useContext(MyContext);
 
-  const roundingOption = 2;
-  const start = 0;
-
   const returnValue = (column) => orderList[column]
-    .map((item) => item.totalPrice).reduce((acc, next) => acc + next, start);
+    .map((item) => item.totalPrice)
+    .reduce((acc, next) => acc + next, 0);
 
   const dishesValue = returnValue('comida');
   const drinksValue = returnValue('bebida');
@@ -25,7 +23,7 @@ function Header() {
           </span>
           <span className="d-flex header-price">
             { `R$ ${(dishesValue + drinksValue + dessertsValue)
-              .toFixed(roundingOption)}` }
+              .toFixed(2)}` }
           </span>
         </div>
         <button

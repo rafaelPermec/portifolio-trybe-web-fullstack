@@ -22,28 +22,40 @@ function MyProvider({ children }) {
 
   /* Passo 8 */
   const removeItemFromList = (orderState, indexPresentInList, itemType) => {
-    setOrderList();
+    orderState.filter((item) => item === orderState[indexPresentInList]);
+    setOrderList({
+      ...orderList,
+      [itemType]: orderState,
+    });
   };
 
   /* Passo 9 */
   const updateValueItemInList = (orderState, indexPresentInList, newItem) => {
-    setOrderList();
+    orderState.splice(indexPresentInList, 1, newItem);
+    setOrderList({
+      ...orderList,
+      [newItem.itemType]: orderState,
+    });
   };
 
   /* Passo 7 */
   const manageItemsInList = (newItem) => {
-    const noQuantity = 0;
     const orderState = orderList[newItem.itemType];
-    const indexPresentInList = orderState.findIndex((e) => e.id === newItem.id);
-    if (Number(newItem.quantity) === noQuantity) {
+    const indexPresentInList = orderState.findIndex((item) => item.id === newItem.id);
+    if (Number(newItem.quantity) < 0) {
       return removeItemFromList(orderState, indexPresentInList, newItem.itemType);
+    } if (Number(newItem.quantity) === 0) {
+      return alert('Não existem mais itens desse tipo em seu carrinho!');
     }
-    updateValueItemInList(orderState, indexPresentInList, newItem);
+    return updateValueItemInList(orderState, indexPresentInList, newItem);
   };
 
   /* Passo 6 */
   const addItemToList = (newItem) => {
-    setOrderList();
+    setOrderList({
+      ...orderList,
+      [newItem.itemType]: [...orderList[newItem.itemType], newItem],
+    });
   };
 
   /* Passo 2 */
@@ -54,18 +66,16 @@ function MyProvider({ children }) {
     const newItem = {
       id: itemName,
       quantity: value,
-      totalPrice: value * itemPrice,
+      totalPrice: (value === 0 ? 0 : itemPrice * value),
       itemType,
     };
-
     /* Passo 4 */
-    const isPresentInList = '';
+    const isPresentInList = orderList[itemType].some((item) => itemName === item.id);
 
     /* Passo 5 */
     if (!isPresentInList) {
       return addItemToList(newItem);
-    }
-    manageItemsInList(newItem);
+    } return manageItemsInList(newItem);
   };
 
   return (

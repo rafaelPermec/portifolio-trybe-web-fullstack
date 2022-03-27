@@ -5,14 +5,12 @@ import MyContext from '../context/MyContext';
 function Options() {
   const { handleChange, updateCart, orderList } = useContext(MyContext);
   const { comida, bebida, sobremesa } = orderList;
-  const roundingOption = 2;
-  const start = 0;
 
   const renderOptionType = (data, meal, mealType) => data.map((item) => {
     const { name, source, price } = item;
     const aux = meal
       .find((e) => e.id === item.name);
-    const quantidade = aux ? aux.quantity : start;
+    const quantidade = aux ? aux.quantity : 0;
     return (
       <div
         key={ name }
@@ -20,7 +18,7 @@ function Options() {
     d-flex flex-column align-items-center justify-content-center"
       >
         <h4 className="title">{ name }</h4>
-        <span>{ `R$ ${price.toFixed(roundingOption)}` }</span>
+        <span>{ `R$ ${price.toFixed(2)}` }</span>
         <img
           className="img-option"
           src={ source }
