@@ -22,10 +22,29 @@ $cat etc/*-release;
 $exit;
 
 # 7. Verifique na sua lista de containers , qual o container é referente ao exercício que acabou de praticar;
+
+$docker container ls -la;
+
 # 8. Inicie o mesmo container novamente , sem criar outro. Valide se ele está ativo na lista de containers;
+
+$docker start 4848;
+
 # 9. Retome o container que foi criado anteriormente nesse exercício ;
+
+$docker attach 4848;
+
 # 10. Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do container ;
+
+$docker container -it 4848;
+$cat etc/*-release;
+
 # 11. Encerre o terminal ;
+
+$exit;
+
 # 12. Remova somente o container criado para esse exercício ;
+
+$docker container rm -f 4848;
+
 # 13. (Bônus) Crie e rode de modo interativo em modo 'Cleanup' , a imagem andrius/ascii-patrol ;
 # 14. (Bônus) Encerre o container utilizando os botões [ ctrl ] + [ c ].
