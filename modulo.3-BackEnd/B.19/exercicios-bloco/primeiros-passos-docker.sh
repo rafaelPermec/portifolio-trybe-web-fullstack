@@ -47,4 +47,11 @@ $exit;
 $docker container rm -f 4848;
 
 # 13. (Bônus) Crie e rode de modo interativo em modo 'Cleanup' , a imagem andrius/ascii-patrol ;
+
+$docker run -it --rm andrius/ascii-patrol;
+$q;
+
 # 14. (Bônus) Encerre o container utilizando os botões [ ctrl ] + [ c ].
+
+$]^C;
+$docker container ls -a;
