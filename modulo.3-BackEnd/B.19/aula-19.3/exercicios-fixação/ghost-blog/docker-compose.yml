@@ -1,0 +1,8 @@
+version: "3"
+services:
+  ghostblog:
+    image: ghost:1-alpine
+    restart: always
+    ports:
+      - 2368:2368
+      
