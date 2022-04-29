@@ -1,21 +1,25 @@
 -- 1. Escreva uma query para exibir a string "This is SQL Exercise, Practice and Solution".
-SELECT "This is SQL Exercise, Practice and Solution" AT Projects;
-SELECT "Rafael Perdigão" AT Scientist;
+SELECT "This is SQL Exercise, Practice and Solution" AS Projects;
+SELECT "Rafael Perdigão" AS Scientist;
 -- 2. Escreva uma query para exibir três números em três colunas.
-SELECT 42 AT the_awnser;
-SELECT 77 AT like_in_cbgb;
-SELECT 86 AT soldier_down;
+SELECT 42 AS the_awnser;
+SELECT 77 AS like_in_cbgb;
+SELECT 86 AS soldier_down;
 -- 3. Escreva uma query para exibir a soma dos números 10 e 15.
-SELECT (10+15) AT mathematics;
+SELECT (10+15) AS mathematics;
 -- 4. Escreva uma query para exibir o resultado de uma expressão aritmética qualquer.
-SELECT COUNT(10+15) AT mathematics;
+SELECT COUNT(10+15) AS mathematics;
 -- 5. Escreva uma query para exibir todas as informações de todos os cientistas.
 SELECT * FROM Scientists;
 -- 6. Escreva uma query para exibir o nome como "Nome do Projeto" e as horas como "Tempo de Trabalho" de cada projeto.
-
+SELECT Name FROM Scientists AS Nome do Projeto;
+SELECT Hours FROM Scientists AS Tempo de Trabalho;
 -- 7. Escreva uma query para exibir o nome dos cientistas em ordem alfabética.
+SELECT Name FROM Scientists ORDER BY Name ASC;
 -- 8. Escreva uma query para exibir o nome dos projetos em ordem alfabética descendente.
+SELECT Name FROM Scientists ORDER BY Name DESC;
 -- 9. Escreva uma query que exiba a string "O projeto Name precisou de Hours horas para ser concluído." para cada projeto.
+SELECT 
 -- 10. Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
 -- 11. Escreva uma query para exibir o código de todos os projetos da tabela AssignedTo sem que haja repetições.
 -- 12. Escreva uma query para exibir o nome do projeto com maior quantidade de horas.
