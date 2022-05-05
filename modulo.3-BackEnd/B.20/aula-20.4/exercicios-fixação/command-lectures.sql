@@ -25,6 +25,12 @@ VALUES (9, 6.8, 450000000, 370000000);
 -- Os Incríveis, classificado em 7.4, lucrou 460 milhões no mercado interno e 510 milhões no mercado internacional.
 -- WALL-E, classificado em 9.9, lucrou 290 milhões no mercado interno e 280 milhões no mercado internacional.
 
+INSERT INTO BoxOffice(movie_id, rating, domestic_sales, international_sales)
+VALUES 
+  (8, 8.5, 300000000, 250000000),
+  (10, 7.4, 460000000, 510000000),
+  (11, 9.9, 290000000, 280000000);
+
 -- Exercício 6: Exclua da tabela Movies o filme "WALL-E".
 
 -- Exercício 7: Exclua da tabela Movies todos os filmes dirigidos por "Andrew Staton".
