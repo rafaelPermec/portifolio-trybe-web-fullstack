@@ -22,25 +22,43 @@ FROM hr.employees
 GROUP BY JOB_ID
 HAVING JOB_ID = 'IT_PROG';
 -- 7. Escreva uma query que exiba a quantidade de dinheiro necessária para efetuar o pagamento de cada profissão (JOB_ID).
-
+SELECT JOB_ID, COUNT(*), SUM(salary)
+FROM hr.employees
+GROUP BY JOB_ID;
 -- 8. Utilizando a query anterior, faça as alterações para que seja exibido somente a quantidade de dinheiro necessária para cobrir a folha de pagamento das pessoas programadoras (IT_PROG).
-
+SELECT JOB_ID, COUNT(*), SUM(salary)
+FROM hr.employees
+GROUP BY JOB_ID
+HAVING JOB_ID = 'IT_PROG';
 -- 9. Escreva uma query que exiba em ordem decrescente a média salarial de todos os cargos, exceto das pessoas programadoras (IT_PROG).
-
+SELECT JOB_ID, COUNT(*), SUM(salary)
+FROM hr.employees
+GROUP BY JOB_ID
+HAVING JOB_ID <> 'IT_PROG'
+ORDER BY salary DESC;
 -- 10. 🚀 Escreva um query que exiba média salarial e o número de funcionários de todos os departamentos com mais de dez funcionários. Dica: agrupe pelo DEPARTMENT_ID.
-
+SELECT JOB_ID, COUNT(*) AS employees, SUM(salary)
+FROM hr.employees
+GROUP BY DEPARTMENT_ID
+HAVING employees > 10;
 -- 11. 🚀 Escreva uma query que atualize a coluna PHONE_NUMBER, de modo que todos os telefones iniciados por 515 agora devem iniciar com 777.
-
+SELECT REPLACE(PHONE_NUMBER, '515', '777') FROM hr.employees;
 -- 12. Escreva uma query que só exiba as informações dos funcionários cujo o primeiro nome tenha oito ou mais caracteres.
-
+SELECT * FROM hr.employees 
+GROUP BY FIRST_NAME 
+HAVING CHAR_LENGTH(FIRST_NAME) > 8;
 -- 13. Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e ano no qual foi contratado (exiba somente o ano).
-
+SELECT EMPLOYEE_ID, FIRST_NAME, YEAR(HIRE_DATE)
+FROM hr.employees;
 -- 14. 🚀 Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e dia do mês no qual foi contratado (exiba somente o dia).
-
+SELECT EMPLOYEE_ID, FIRST_NAME, DAY(HIRE_DATE)
+FROM hr.employees;
 -- 15. Escreva uma query que exiba as seguintes informações de cada funcionário: id, primeiro nome e mês no qual foi contratado (exiba somente o mês).
-
+SELECT EMPLOYEE_ID, FIRST_NAME, MONTH(HIRE_DATE)
+FROM hr.employees;
 -- 16. Escreva uma query que exiba os nomes dos funcionários em letra maiúscula.
-
+SELECT UCASE(FIRST_NAME), UCASE(LAST_NAME)
+FROM hr.employees;
 -- 17: Escreva uma query que exiba o sobrenome e a data de contratação de todos os funcionário contratados em julho de 1987.
 
 -- 18: 🚀 Escreva uma query que exiba as seguintes informações de cada funcionário: nome, sobrenome, tempo que trabalha na empresa (em dias).
