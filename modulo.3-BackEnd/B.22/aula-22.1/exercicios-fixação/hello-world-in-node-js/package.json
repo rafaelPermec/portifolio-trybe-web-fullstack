@@ -1,0 +1,12 @@
+{
+  "name": "hello-world-in-node",
+  "version": "1.0.0",
+  "description": "My first npm package in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}
