@@ -8,5 +8,8 @@
     "start": "node index.js"
   },
   "author": "Rafael P. M. Castro",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
