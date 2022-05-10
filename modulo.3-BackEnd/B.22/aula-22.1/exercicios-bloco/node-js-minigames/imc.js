@@ -28,7 +28,7 @@ if (sensitive === 'y') {
     console.log(`Between Obesity grades III and IV`);
   }
 
-} if (sensitive !== 'y') {
+} else if (sensitive !== 'y') {
   console.log(`Well... Goodbye then! =)`)
 }
 
