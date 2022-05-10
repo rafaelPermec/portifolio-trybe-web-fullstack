@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "imc": "node imc.js",
+    "velocity": "node velocity.js",
+    "trivia": "node trivia.js",
+    "factorial": "node factorial.js",
+    "fibonacci": "node fibonacci.js"
   },
   "author": "Rafael P. M. Castro",
   "license": "ISC",
