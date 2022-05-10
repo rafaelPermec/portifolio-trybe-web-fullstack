@@ -1,0 +1,15 @@
+{
+  "name": "imc-calculator",
+  "version": "1.0.0",
+  "description": "A simple imc project for my Node.Js studies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
