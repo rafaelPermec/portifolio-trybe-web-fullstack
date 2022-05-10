@@ -1,6 +1,5 @@
 const velocity = (depth, time) => {
-  const speed = depth / time;
-  return speed;
+  return depth / time;
 }
 
 module.exports = velocity;

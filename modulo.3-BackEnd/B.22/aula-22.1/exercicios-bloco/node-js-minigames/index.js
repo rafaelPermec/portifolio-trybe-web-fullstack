@@ -15,10 +15,8 @@ function choosenScript() {
 
   const choosenOne = ask.questionInt(menu) - 1;
 
-  const script = scripts[choosenOne];
-
-  return script;
-};
+  return scripts[choosenOne];
+}
 
 function main() {
   const script = choosenScript();
