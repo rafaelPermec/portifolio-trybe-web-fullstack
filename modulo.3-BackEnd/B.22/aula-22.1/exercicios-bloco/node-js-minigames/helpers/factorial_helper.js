@@ -1,12 +1,12 @@
 const factorial = (x) => {
-  let factorial = x;
-  const firstMult = factorial - 1;
+  let fact = x;
+  const firstMult = fact - 1;
 
   for (let i = firstMult; i > 0; i -= 1) {
-    factorial *= i;
+    fact *= i;
   }
 
-  return factorial;
+  return fact;
 }
 
 module.exports = factorial;
