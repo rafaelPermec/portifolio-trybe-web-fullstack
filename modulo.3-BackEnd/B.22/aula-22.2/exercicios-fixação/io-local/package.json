@@ -1,0 +1,12 @@
+{
+  "name": "io-local",
+  "version": "1.0.0",
+  "description": "Reading sync files lecture",
+  "main": "readFileSync.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node readFileSync.js"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}
