@@ -1,0 +1,11 @@
+{
+  "name": "simpsons-node",
+  "version": "1.0.0",
+  "description": "Simpsons API exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}
