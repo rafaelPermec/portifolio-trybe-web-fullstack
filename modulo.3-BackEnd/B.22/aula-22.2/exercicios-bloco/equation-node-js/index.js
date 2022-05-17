@@ -6,13 +6,13 @@ const equation = (num1, num2, num3) => {
       return rej(new Error(`Informe apenas números.`));
     } if (doingMath < 100) {
       return rej(new Error(`Valor muito baixo.`));
-    } return res(doingMath);
+    } else return res(doingMath);
   })
 };
 
-const num1 = Math.floor(Math.random() * 20 + 1);
-const num2 = Math.floor(Math.random() * 20 + 1);
-const num3 = Math.floor(Math.random() * 20 + 1);
+const nume1 = Math.floor(Math.random() * 20 + 1);
+const nume2 = Math.floor(Math.random() * 20 + 1);
+const nume3 = Math.floor(Math.random() * 20 + 1);
 const num4 = Math.floor(Math.random() * 20 + 1);
 const num5 = Math.floor(Math.random() * 20 + 1);
 const num6 = Math.floor(Math.random() * 20 + 1);
@@ -20,7 +20,7 @@ const num7 = Math.floor(Math.random() * 20 + 1);
 const num8 = Math.floor(Math.random() * 20 + 1);
 const num9 = Math.floor(Math.random() * 20 + 1);
 
-equation(num1, num2, num3)
+equation(nume1, nume2, nume3)
   .then((result) => console.log(result))
   .catch((err) => console.log(err.message));
 
