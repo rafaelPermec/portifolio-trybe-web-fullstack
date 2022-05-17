@@ -4,9 +4,11 @@ const equation = (num1, num2, num3) => {
     const doingMath = ((num1 + num2) * num3);
     if (typeof num1 !== 'number' || typeof num2 !== 'number' || typeof num3 !== 'number') {
       return rej(new Error(`Informe apenas números.`));
-    } if (doingMath < 100) {
+    } 
+    if (doingMath < 100) {
       return rej(new Error(`Valor muito baixo.`));
-    } else return res(doingMath);
+    } 
+    else return res(doingMath);
   })
 };
 
