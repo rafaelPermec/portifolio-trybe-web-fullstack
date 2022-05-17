@@ -1,0 +1,11 @@
+{
+  "name": "promise-all-node",
+  "version": "1.0.0",
+  "description": "Promise.all([]) exercises by Trybe!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}

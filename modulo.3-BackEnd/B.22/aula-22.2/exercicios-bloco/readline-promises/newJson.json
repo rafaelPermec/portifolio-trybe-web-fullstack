@@ -1,0 +1,11 @@
+{
+  "name": "readline-promises",
+  "version": "1.0.0",
+  "description": "A exercise envolving readline package and async promises for unix/bash environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && testDrivenDevelopmentFirst 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}
