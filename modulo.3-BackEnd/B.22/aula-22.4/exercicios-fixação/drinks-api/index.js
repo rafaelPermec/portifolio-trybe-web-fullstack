@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 const drinks = [
 	{ id: 1, name: 'Refrigerante Lata', price: 5.0 },
@@ -10,10 +11,18 @@ const drinks = [
 	{ id: 6, name: 'Água Mineral 500 ml', price: 5.0 },
 ];
 
-const sortedDrinks = drinks.sort((a, b) => a.name < b.name ? 1 : -1);
+app.use(bodyParser.json());
 
 app.get('/drinks', (_req, res) => {
+  const sortedDrinks = drinks.sort((a, b) => a.name < b.name ? 1 : -1);
   res.json(sortedDrinks);
+});
+
+
+app.post('/drinks', (req, res) => {
+  const { id, name, price, waitTime } = req.body;
+  drinks.push({ id, name, price, waitTime });
+  res.status(201).json({ message: `${id}, ${name}, ${price}, ${waitTime}` });
 });
 
 app.get('/drinks/search', (req, res) => {
