@@ -10,9 +10,17 @@ const drinks = [
 	{ id: 6, name: 'Água Mineral 500 ml', price: 5.0 },
 ];
 
+
 app.get('/drinks', (_req, res) => {
   const sortedDrinks = drinks.sort((a, b) => a.name < b.name ? 1 : -1)
   res.json(sortedDrinks);
+});
+
+app.get('/drinks/search', (req, res) => {
+  const { name, minPrice } = req.query;
+  const filteredDrinks = drinks.filter((e) => e.name.includes(name) && e.price >= parseInt(minPrice));
+
+  res.status(200).json(filteredDrinks);
 });
 
 app.get('/drinks/:id', (req, res) => {
