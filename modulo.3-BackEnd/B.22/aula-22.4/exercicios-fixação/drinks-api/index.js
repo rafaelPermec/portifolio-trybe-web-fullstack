@@ -12,8 +12,7 @@ const drinks = [
 
 
 app.get('/drinks', (_req, res) => {
-  const sortedDrinks = drinks.sort((a, b) => a.name < b.name ? 1 : -1)
-  res.json(sortedDrinks);
+  res.json(drinks.sort((a, b) => a.name < b.name ? 1 : -1));
 });
 
 app.get('/drinks/search', (req, res) => {
