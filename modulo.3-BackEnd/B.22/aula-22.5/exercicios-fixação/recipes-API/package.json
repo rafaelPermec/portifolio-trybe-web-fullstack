@@ -1,0 +1,18 @@
+{
+  "name": "recipes-api",
+  "version": "1.1.0",
+  "description": "Continuing my exercises about node.js w/ express in a CRUD way - but with middlewares and routers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
