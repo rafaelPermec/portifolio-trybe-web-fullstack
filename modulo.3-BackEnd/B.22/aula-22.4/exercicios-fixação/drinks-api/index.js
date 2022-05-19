@@ -41,6 +41,34 @@ app.get('/drinks/:id', (req, res) => {
   res.status(200).json(drink);
 });
 
+app.put('/drinks/:id', (req, res) => {
+  const { id } = req.params;
+  const { name, price, waitTime } = req.body;
+  const drinkIndex = drinks.findIndex((r) => r.id === parseInt(id));
+
+  if (drinkIndex === -1) return res.status(404).json({ message: 'Recipe not found!' });
+
+  drinks[drinkIndex] = { ...drinks[drinkIndex], name, price, waitTime };
+
+  res.status(204).end();
+});
+
+app.delete('/drinks/:id', (req, res) => {
+  const { id } = req.params;
+  const drinksIndex = drinks.findIndex((r) => r.id === parseInt(id));
+
+  if (drinksIndex === -1) return res.status(404).json({ message: 'Recipe not found!' });
+  
+  drinks.splice(drinksIndex, 1);
+
+  res.status(204).end();
+});
+
+app.all('*', function (req, res) {
+	return res.status(404).json({ message: `Rota '${req.path}' não existe!`});
+});
+
+
 app.listen(3001, () => {
   console.log('App is listening to port 3001');
 });
