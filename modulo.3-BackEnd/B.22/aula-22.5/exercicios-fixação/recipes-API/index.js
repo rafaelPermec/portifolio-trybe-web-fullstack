@@ -10,7 +10,7 @@ const recipes = [
   { id: 3, name: 'Macarrão com molho branco', price: 35.0, waitTime: 25 },
 ];
 
-app.get('/recipes', function (req, res) {
+app.get('/recipes', function (_req, res) {
   res.status(200).json(recipes);
 });
 
