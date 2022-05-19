@@ -1,0 +1,18 @@
+{
+  "name": "recipe-api",
+  "version": "1.0.0",
+  "description": "A experimental recipe-API used for learning node.js + express routes ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
