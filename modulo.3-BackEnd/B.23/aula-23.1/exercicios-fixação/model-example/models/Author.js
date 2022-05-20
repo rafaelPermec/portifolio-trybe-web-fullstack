@@ -11,15 +11,15 @@ const serialize = (data) => {
 }
 
 const getAll = async () => {
-  const [ authors ] = await connection.execute('SELECT id, first_name, middle_name, last_name FROM model_example.authors;');
-  
+  const [authors] = await connection.execute('SELECT id, first_name, middle_name, last_name FROM model_example.authors;');
+
   return authors;
 }
 
 const getNewAuthor = ({ id, firstName, middleName, lastName }) => {
   const fullName = [firstName, middleName, lastName]
-  .filter((e) => e)
-  .join(' ');
+    .filter((e) => e)
+    .join(' ');
 
   return { id, firstName, middleName, lastName, fullName };
 }
