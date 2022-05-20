@@ -14,7 +14,7 @@ app.get('/authors', async (_req, res) => {
 app.get('/books', async (req, res) => {
   const { id } = req.query;
   const books = await Book.getByAuthorId(id);
-  
+
   res.status(200).json(books);
 });
 
