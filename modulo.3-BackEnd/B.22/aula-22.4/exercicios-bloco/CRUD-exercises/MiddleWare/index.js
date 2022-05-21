@@ -3,8 +3,6 @@
 // O token deve ter exatamente 16 caracteres.
 // Caso o token seja inválido ou inexistente, a resposta deve possuir o status 401 - Unauthorized e o JSON { message: 'Token inválido!' }.
 
-
-
 module.exports = (req, res, next) => {
   try {
     const { authorization } = req.headers;
