@@ -1,3 +1,8 @@
+const express = require('express');
+const app = express();
+
+app.get(express.json());
+
 // 1. Crie o endpoint POST /user; 🚀
 // Seu endpoint deve receber o seguinte conteúdo no body da request:
 // {
@@ -22,7 +27,9 @@
 // 	"email": "calebe.junior@gmail.com"
 // }
 
-
+app.post('user', (req, res) => {
+  const { firstName, lastName, email, password } = req.body;
+})
 
 // 2. Crie o endpoint GET /user; 🚀
 // O endpoint sempre deve retornar um array;
