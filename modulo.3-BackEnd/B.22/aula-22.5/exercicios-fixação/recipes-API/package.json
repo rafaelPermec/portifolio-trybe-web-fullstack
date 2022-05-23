@@ -4,7 +4,8 @@
   "description": "Continuing my exercises about node.js w/ express in a CRUD way - but with middlewares and routers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "author": "Rafael P. M. Castro",
   "license": "ISC",
