@@ -14,7 +14,6 @@ app.get(express.json());
 // Todos os campos são obrigatórios;
 // O campo password deve ser uma string de 6 ou mais caracteres;
 // Caso qualquer um dos campos seja inválido, retorne um JSON com o seguinte formato, variando a mensagem conforme o campo e o erro:
-// Copiar
 // {
 // 	"error": true,
 // 	"message": "O campo 'password' deve ter pelo menos 6 caracteres"
@@ -57,14 +56,12 @@ app.post('user', (req, res) => {
 // 	"password": "d496d5ea2442"
 // }
 // Caso qualquer um dos campos esteja faltando ou seja inválido, retorne um JSON com o seguinte formato, variando a mensagem conforme o campo e o erro:
-// Copiar
 // {
 // 	"error": true,
 // 	"message": "O campo 'password' deve ter pelo menos 6 caracteres"
 // }
 // Caso esteja tudo certo, utilize os dados enviados no corpo da requisição para atualizar o usuário cujo id foi especificado na URL;
 // Depois de alterar os dados do usuário no banco, retorne os novos dados com o status 200 OK, no seguinte formato:
-// Copiar
 // {
 // 	"id": 1,
 // 	"firstName": "Calebe",
@@ -72,7 +69,6 @@ app.post('user', (req, res) => {
 // 	"email": "calebe.junior@gmail.com"
 // }
 // Caso o usuário em questão não exista, retorne o status 404 Not Found e os seguintes dados em JSON no corpo da resposta:
-// Copiar
 // {
 // 	"error": true,
 // 	"message": "Usuário não encontrado"
