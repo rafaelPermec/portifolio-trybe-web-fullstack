@@ -7,10 +7,6 @@ app.use(bodyParser.json());
 const { validatePrice } = require('./middleware');
 const authMiddleware = require('./middleware/auth-middleware');
 
-app.get('/open', function (req, res) {
-  res.send('open!')
-});
-
 const recipes = [
   { id: 1, name: 'Lasanha', price: 40.0, waitTime: 30 },
   { id: 2, name: 'Macarrão a Bolonhesa', price: 35.0, waitTime: 25 },
