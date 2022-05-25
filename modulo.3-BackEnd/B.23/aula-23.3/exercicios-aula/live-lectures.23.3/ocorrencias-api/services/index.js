@@ -5,7 +5,7 @@ const getAll = async () => await getAllAdress();
 
 const validator = joi.object().keys({
   descricao: joi.string().required(),
-  data_hora: joi.date().validate('YYYY-MM-DD HH:MM'),
+  dataHora: joi.date().format('YYYY-MM-DD HH:mm'),
   categoria: joi.string().required(),
   logradouro: joi.string().required(),
   numero: joi.number().required(),
