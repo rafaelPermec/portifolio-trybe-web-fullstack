@@ -72,6 +72,7 @@ const PORT = 3000;
 app.post('/user', middlewares.createUser);
 app.get('/user', middlewares.getUser);
 app.get('/user/:id', middlewares.userById);
+app.put('/user/:id', middlewares.updateUser);
 
 app.use(middlewares.error);
 
