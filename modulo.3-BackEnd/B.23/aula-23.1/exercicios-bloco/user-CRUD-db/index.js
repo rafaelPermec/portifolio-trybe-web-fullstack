@@ -69,8 +69,9 @@ const PORT = 3000;
 // 	"message": "Usuário não encontrado"
 // }
 
-app.get('/user', middlewares.getUser);
 app.post('/user', middlewares.createUser);
+app.get('/user', middlewares.getUser);
+app.get('/user/:id', middlewares.userById);
 
 app.use(middlewares.error);
 
