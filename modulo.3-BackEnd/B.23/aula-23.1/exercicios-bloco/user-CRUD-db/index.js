@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 const middlewares = require('./middlewares');
 
-app.get(express.json());
+app.use(bodyParser.json());
 
 const PORT = 3000;
 

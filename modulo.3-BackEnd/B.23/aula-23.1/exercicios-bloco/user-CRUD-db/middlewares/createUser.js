@@ -3,7 +3,7 @@ const UserModel = require('../models/Users');
 
 module.exports = [
   (req, _res, next) => {
-    const { error } = userValidation.validate(req.body);
+    const { error } = UserModel.isValid(req.body);
 
     if (error) return next(error);
 
