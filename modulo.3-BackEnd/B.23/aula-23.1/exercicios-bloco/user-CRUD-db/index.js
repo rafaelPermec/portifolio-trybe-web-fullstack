@@ -28,6 +28,8 @@ app.get(express.json());
 
 app.post('user', (req, res) => {
   const { firstName, lastName, email, password } = req.body;
+
+  asudhasudhasud
 })
 
 // 2. Crie o endpoint GET /user; 🚀
