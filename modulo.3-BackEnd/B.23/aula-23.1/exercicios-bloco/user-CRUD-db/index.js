@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const middlewares = require('./middlewares');
 
 app.get(express.json());
 
@@ -68,3 +69,9 @@ const PORT = 3000;
 // 	"message": "Usuário não encontrado"
 // }
 
+app.get('/user', middlewares.getUser);
+app.post('/user', middlewares.createUser);
+
+app.use(middlewares.error);
+
+app.listen(PORT, console.log(`Now, listening to: http://localhost:${PORT}`));
