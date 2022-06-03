@@ -1,7 +1,11 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+const middlewares = require('./middlewares');
 
-app.get(express.json());
+app.use(bodyParser.json());
+
+const PORT = 3000;
 
 // 1. Crie o endpoint POST /user; 🚀
 // Seu endpoint deve receber o seguinte conteúdo no body da request:
@@ -26,16 +30,10 @@ app.get(express.json());
 // 	"email": "calebe.junior@gmail.com"
 // }
 
-app.post('user', (req, res) => {
-  const { firstName, lastName, email, password } = req.body;
-})
-
 // 2. Crie o endpoint GET /user; 🚀
 // O endpoint sempre deve retornar um array;
 // Quando não houver nenhum usuário cadastrado, retorne um array vazio;
 // Deve sempre retornar o status 200 OK;
-
-
 
 // 3. Crie o endpoint GET /user/:id; 🚀
 // O endpoint deve retornar o usuário cujo id seja igual ao parâmetro id informado na URL. O status deve ser 200 OK;
@@ -44,8 +42,6 @@ app.post('user', (req, res) => {
 // 	"error": true,
 // 	"message": "Usuário não encontrado"
 // }
-
-
 
 // 4. Crie o endpoint PUT /user/:id; 🚀
 // O endpoint deve receber, no body da request, os seguintes dados, em JSON:
@@ -73,3 +69,12 @@ app.post('user', (req, res) => {
 // 	"error": true,
 // 	"message": "Usuário não encontrado"
 // }
+
+app.post('/user', middlewares.createUser);
+app.get('/user', middlewares.getUser);
+app.get('/user/:id', middlewares.userById);
+app.put('/user/:id', middlewares.updateUser);
+
+app.use(middlewares.error);
+
+app.listen(PORT, console.log(`Now, listening to: http://localhost:${PORT}`));
