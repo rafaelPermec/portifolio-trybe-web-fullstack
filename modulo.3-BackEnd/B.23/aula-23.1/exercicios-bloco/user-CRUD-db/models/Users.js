@@ -10,25 +10,31 @@ const userValidation = Joi.object({
 
 const isValid = (data) => userValidation.validate(data);
 
-const serialize = ({ id, first_name: firstName, last_name: lastName, email }) => { id, firstName, lastName, email };
+const serialize = ({ id, first_name: firstName, last_name: lastName, email }) => ({ id, firstName, lastName, email });
 
 const createUser = async ({ firstName, lastName, email, password }) => {
   const query = 'INSERT INTO `users_crud`.users (first_name, last_name, email, password) VALUES (?,?,?,?);';
 
-  return await connection.execute(query, [firstName, lastName, email, password])
+  const executeQuery = await connection.execute(query, [firstName, lastName, email, password])
     .then(([result]) => ({ id: result.insertId, firstName, lastName, email }));
+
+  return executeQuery;
 };
 
 const getUser = async () => {
   const query = 'SELECT * FROM `users_crud`.users;'
-  return await connection.execute(query)
+  const executeQuery = await connection.execute(query)
     .then(([results]) => results.map(serialize));
+
+  return executeQuery;
 };
 
 const getById = async (id) => {
   const query = 'SELECT * FROM `users_crud`.users WHERE id = ?;';
-  return await connection.execute(query, [id])
+  const executeQuery = await connection.execute(query, [id])
     .then(([results]) => (!results[0] ? null : serialize(results[0])));
+
+  return executeQuery;
 }
 
 const updateUser = async (id, { firstName, lastName, email, password }) => {
