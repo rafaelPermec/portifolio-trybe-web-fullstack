@@ -1,0 +1,19 @@
+{
+  "name": "hello-msc",
+  "version": "1.0.0",
+  "description": "A introduction to Service and Controller Modules in a MSC architecture",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Rafael P. M Castro",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "express-rescue": "^1.1.31",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16"
+  }
+}
