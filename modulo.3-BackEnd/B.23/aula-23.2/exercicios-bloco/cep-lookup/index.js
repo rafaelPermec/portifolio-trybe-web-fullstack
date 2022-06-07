@@ -4,4 +4,4 @@ require('dotenv').config();
 
 const PORT = process.env['MYSQL_PORT'];
 
-app.listen(PORT, () => console.log(`http://localhost:3000/`));
+app.listen(PORT, () => console.log(`http://localhost:${PORT}/`));
