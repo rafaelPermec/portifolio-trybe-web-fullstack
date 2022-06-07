@@ -1,0 +1,11 @@
+{
+  "name": "cep-lookup",
+  "version": "1.0.0",
+  "description": "A exercise about Controllers & Services in a Architectural Pattern Design called MSC, with postal codes in Brasil.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}
