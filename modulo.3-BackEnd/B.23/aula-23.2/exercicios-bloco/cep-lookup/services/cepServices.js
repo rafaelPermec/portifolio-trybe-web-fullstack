@@ -1,16 +1,16 @@
 const models = require('../models/cepModel');
-const middlewares = require('../middlewares');
+const viaCep = require('../models/axiosCepModel');
 
 const findAdressByCep = async (searchCEP) => {
-  if (middlewares.CEP_REGEX.test(searchCEP)) {
-    return { error: { code: 'invalidData', message: 'CEP inválido' } };
-  }
+  const dbCep = await models.getAdressByCEP(searchCEP);
 
-  const cep = await models.getAdressByCEP(searchCEP);
+  if (dbCep) return dbCep;
 
-  if (!cep) return { error: { code: "notFound", message: "CEP não encontrado" } };
+  const cepFromAPI = await viaCep.lookupCEP(searchCEP);
 
-  return cep;
+  if (!cepFromAPI) return { error: { code: "notFound", message: "CEP não encontrado" } };
+
+  return models.create(cepFromAPI);
 }
 
 const create = async ({ cep, logradouro, bairro, localidade, uf }) => {

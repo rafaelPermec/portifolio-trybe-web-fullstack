@@ -3,7 +3,7 @@ const NEW_CEP_REGEX = /(\d{5})(\d{3})/;
 
 const serializeCEP = (cep) => {
 
-  if (CEP_REGEX.text(cep)) return cep;
+  if (CEP_REGEX.test(cep)) return cep;
 
   return cep.replace(NEW_CEP_REGEX, '$1-$2');
 };
