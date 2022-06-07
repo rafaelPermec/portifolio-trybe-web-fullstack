@@ -11,6 +11,8 @@ app.use(express.json());
 
 app.get('/cep/:cep', controllers.findAdressByCep);
 
+app.post('/cep', controllers.create);
+
 app.use(middlewares.error);
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}/`));

@@ -24,7 +24,7 @@ const error = (err, _req, res, _next) => {
   }
 
   if (err.code) {
-    const errorCode = { notFound: 404 };
+    const errorCode = { notFound: 404, alreadyExists: 409 };
     const status = errorCode[err.code] || 500;
 
     res.status(status).json(err);
