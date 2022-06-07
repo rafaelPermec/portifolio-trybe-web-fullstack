@@ -1,6 +1,7 @@
+const CEP_REGEX = /\d{5}-\d{3}/;
+const NEW_CEP_REGEX = /(\d{5})(\d{3})/;
+
 const serializeCEP = (cep) => {
-  const CEP_REGEX = /\d{5}-\d{3}/;
-  const NEW_CEP_REGEX = /(\d{5})(\d{3})/;
 
   if (CEP_REGEX.text(cep)) return cep;
 
@@ -16,6 +17,8 @@ const newCEP = ({ cep, logradouro, bairro, localidade, uf }) => ({
 });
 
 module.exports = {
+  CEP_REGEX,
+  NEW_CEP_REGEX,
   serializeCEP,
   newCEP,
 }
