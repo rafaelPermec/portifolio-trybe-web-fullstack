@@ -17,16 +17,16 @@ const newCEP = ({ cep, logradouro, bairro, localidade, uf }) => ({
 });
 
 const error = (err, _req, res, _next) => {
-  if (err.isJoi) return res.status(400).json({
-    error: { message: err.details[0].message }
-  });
-
-  if (err.code) {
+  if (err.isJoi) {
+    return res.status(400).json({
+      error: { message: err.details[0].message }
+    });
+  } if (err.code) {
     const errorCode = { notFound: 404 };
     const status = errorCode[err.code] || 500;
 
     res.status(status).json(err);
-  };
+  }
 
   console.log(err);
 
