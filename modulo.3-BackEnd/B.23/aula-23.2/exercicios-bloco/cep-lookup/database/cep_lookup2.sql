@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS cep_lookup2;
+
+USE cep_lookup2;
+
+CREATE TABLE IF NOT EXISTS bairros (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  bairro VARCHAR(20) NOT NULL,
+  localidade VARCHAR(20) NOT NULL,
+  uf VARCHAR(2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS ceps (
+  cep VARCHAR(8) NOT NULL PRIMARY KEY,
+  logradouro VARCHAR(50) NOT NULL,
+  bairro_id INT NOT NULL, 
+  FOREIGN KEY (bairro_id) REFERENCES bairros(id)
+);
