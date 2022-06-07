@@ -21,7 +21,9 @@ const error = (err, _req, res, _next) => {
     return res.status(400).json({
       error: { message: err.details[0].message }
     });
-  } if (err.code) {
+  }
+
+  if (err.code) {
     const errorCode = { notFound: 404 };
     const status = errorCode[err.code] || 500;
 
