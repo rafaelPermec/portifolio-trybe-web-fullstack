@@ -1,0 +1,14 @@
+{
+  "name": "hello-http-methods",
+  "version": "1.0.0",
+  "description": "A exercise about REST & RESTful API's with HTTP methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
