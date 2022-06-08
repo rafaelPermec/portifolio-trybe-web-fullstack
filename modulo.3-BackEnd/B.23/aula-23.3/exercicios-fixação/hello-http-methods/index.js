@@ -10,7 +10,7 @@ const headers = new fetch.Headers({
 const body = JSON.stringify({
   job: 'FullStack Developer',
   email: 'dev.rafaelpermec@gmail.com',
-  stack: 'MySQL, Express, React, Node.js (MERN)',
+  stack: 'MySQL || MongoDB, Express, React, Node.js (MERN)',
 })
 
 fetch('https://postman-echo.com/post?param1=teste', {
