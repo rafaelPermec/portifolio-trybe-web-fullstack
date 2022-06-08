@@ -40,11 +40,17 @@ router.delete('/:id', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
+  const { id } = req.params;
   const { name, brand } = req.body;
 
-  const products = await ProductModel.update(req.params.id, name, brand);
+  if (!name || !brand) return res.status(400).json({ message: 'Informações do produto inválidas' });
 
-  res.send(products);
+  const product = await ProductModel.getById(id);
+  if (!product) return res.status(404).json({ message: 'Produto não encontrado' });
+
+  await ProductModel.update(id, name, brand);
+
+  res.status(200).json({ name, brand });
 });
 
 module.exports = router;
