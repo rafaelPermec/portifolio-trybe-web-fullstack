@@ -1,0 +1,18 @@
+{
+  "name": "rest-exercises",
+  "version": "1.0.0",
+  "description": "More exercises about REST & RESTful API's with HTTP methods",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16"
+  }
+}
