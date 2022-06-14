@@ -2,8 +2,7 @@ const fs = require('fs');
 
 const leArquivo = (nomeDoArquivo) => {
   try {
-    const conteudo = fs.readFileSync(nomeDoArquivo, 'utf-8');
-    return conteudo;
+    return fs.readFileSync(nomeDoArquivo, 'utf-8');
   } catch (error) {
     return null;
   }
