@@ -19,20 +19,20 @@ describe('Lê um arquivo', () => {
     });
 
     describe('a resposta', () => {
-        const answer = leArquivo('arquivo.txt');
-    
       it('é uma string', () => {
+        const answer = leArquivo('arquivo.txt');
         expect(answer).to.be.a('string');
       });
 
       it('é igual ao conteudo do arquivo', () => {
+        const answer = leArquivo('arquivo.txt');
         expect(answer).to.be.equals(CONTEUDO_DO_ARQUIVO);
       });
-    
+
     });
   });
 
-describe('Quando o arquivo NÃO existe', () => {
+  describe('Quando o arquivo NÃO existe', () => {
 
     before(() => {
       sinon
@@ -44,12 +44,12 @@ describe('Quando o arquivo NÃO existe', () => {
       fs.readFileSync.restore();
     });
 
-  describe('a resposta', () => {
-    it('é igual a "null"', () => {
-      const answer = leArquivo('file-in-fancy-inglish.txt');
+    describe('a resposta', () => {
+      it('é igual a "null"', () => {
+        const answer = leArquivo('file-in-fancy-inglish.txt');
 
-      expect(answer).to.be.equal(null);
-    });
+        expect(answer).to.be.equal(null);
+      });
 
     });
   });
