@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node .",
-    "test": "mocha tests.js"
+    "test": "mocha index.test.js"
   },
   "author": "Rafael P. M. Castro",
   "license": "ISC"
