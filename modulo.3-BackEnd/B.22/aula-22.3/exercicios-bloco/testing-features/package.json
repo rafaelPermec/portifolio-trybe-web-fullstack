@@ -9,8 +9,8 @@
     "sinon": "^14.0.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha tests.js"
+    "start": "node .",
+    "test": "mocha index.test.js"
   },
   "author": "Rafael P. M. Castro",
   "license": "ISC"
