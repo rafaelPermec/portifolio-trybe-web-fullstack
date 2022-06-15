@@ -1,5 +1,5 @@
 {
-  "name": "first-tests-with-mocha",
+  "name": "testing-features",
   "version": "1.0.0",
   "description": "A exercise about TDD & tests with Mocha e Chai frameworks for node.js backend API's",
   "main": "index.js",

@@ -1,0 +1,17 @@
+{
+  "name": "first-tests-with-mocha-chai-sinon",
+  "version": "1.0.0",
+  "description": "A exercise about TDD & tests with Mocha e Chai frameworks for node.js backend API's",
+  "main": "index.js",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha tests.js"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}
