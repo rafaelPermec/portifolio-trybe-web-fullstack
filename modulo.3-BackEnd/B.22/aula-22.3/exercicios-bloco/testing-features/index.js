@@ -8,4 +8,8 @@ function verificaNumero(number) {
   }
 };
 
-module.exports = { verificaNumero };
+function escreveArquivo(arquivo, conteudo) {
+
+};
+
+module.exports = { verificaNumero, escreveArquivo };
