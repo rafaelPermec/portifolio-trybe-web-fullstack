@@ -6,7 +6,7 @@ const { verificaNumero } = require('./index.js');
 describe('Valida se na aplicação.', () => {
   describe('a função "verificaNumero":', () => {
     it('Vai receber um número como parâmetro e retornar uma string como resposta,', () => {
-      const number = 7;
+      const number = typeof 'number';
       const result = verificaNumero(number);
 
       expect(result).to.be.a('string');
@@ -22,7 +22,7 @@ describe('Valida se na aplicação.', () => {
     });
 
     it('menor que 0 - deverá retornar "negativo"', () => {
-      const number = 3;
+      const number = -3;
       const result = verificaNumero(number);
 
       expect(result).to.be.equals('negativo');
