@@ -1,11 +1,16 @@
 const MoviesModel = require('../models/movieModel');
 
 const isValid = (title, directedBy, releaseYear) => {
-  if (!title || typeof title !== 'string') return false;
-  if (!releaseYear || typeof releaseYear !== 'number') return false;
-  if (!directedBy || typeof directedBy !== 'string') return false;
+  if (!title || typeof title !== 'string') {
+    return false;
+  } else if (!releaseYear || typeof releaseYear !== 'number') {
+    return false;
+  } else if (!directedBy || typeof directedBy !== 'string') {
+    return false;
+  } else {
+    return true;
+  };
 
-  return true;
 };
 
 const create = async ({ title, directedBy, releaseYear }) => {
