@@ -8,11 +8,11 @@ function verificaNumero(number) {
     case -1: return 'negativo';
     default: return 'neutro'
   }
-};
+}
 
 function escreveArquivo(arquivo, conteudo) {
   fs.writeFileSync(arquivo, conteudo);
   return 'ok';
-};
+}
 
 module.exports = { verificaNumero, escreveArquivo };
