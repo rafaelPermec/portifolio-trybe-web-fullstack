@@ -1,9 +1,10 @@
 function verificaNumero(number) {
+  if (typeof number !== 'number') return 'o valor deve ser um número';
+
   switch (Math.sign(number)) {
-    case 1: return 'positivo'
-    case -1: return 'negativo'
-    case (0 || -0): return 'neutro'
-    default: return 'o valor deve ser um número'
+    case 1: return 'positivo';
+    case -1: return 'negativo';
+    default: return 'neutro'
   }
 };
 

@@ -1,15 +1,17 @@
+const fs = require('fs');
+
 const { expect } = require('chai');
 const sinon = require('sinon');
 
-const { verificaNumero } = require('./index.js');
+const { verificaNumero, escreveArquivo } = require('./index.js');
 
-describe('Valida se na aplicação.', () => {
+describe('Valida se na aplicação,', () => {
   describe('a função "verificaNumero":', () => {
     it('Vai receber um número como parâmetro e retornar uma string como resposta,', () => {
-      const string = 'string';
-      const result = verificaNumero(string);
+      const object = { name: 'xablauzer' };
+      const result = verificaNumero(object);
 
-      expect(result).to.be.equals('o valor deve ser um número');
+      expect(result).to.be.equal('o valor deve ser um número');
     });
   });
 
@@ -34,5 +36,16 @@ describe('Valida se na aplicação.', () => {
 
       expect(result).to.be.equals('neutro');
     });
+  });
+});
+
+describe('Valida se na aplicação que escreverá um conteúdo em um arquivo específico', () => {
+
+  it('a função recebe dois parâmetros - o nome do arquivo e o conteúdo desse arquivo:', () => {
+
+  });
+
+  it('dá retorno com um "ok":', () => {
+
   });
 });
