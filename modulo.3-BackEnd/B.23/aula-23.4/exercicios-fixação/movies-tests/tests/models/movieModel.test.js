@@ -1,8 +1,7 @@
+const sinon = require('sinon');
 const { expect } = require('chai');
 
-const MoviesModel = {
-  create: () => { }
-};
+const MovieModel = require('../../models/movieModel');
 
 describe('Insere um novo filme no database', () => {
   const payloadMovie = {
@@ -14,7 +13,7 @@ describe('Insere um novo filme no database', () => {
   describe('quando é inserido com sucesso', () => {
 
     it('retorna um objeto:', async () => {
-      const response = await MoviesModel.create(payloadMovie);
+      const response = await MovieModel.create(payloadMovie);
 
       expect(response).to.be.a('object');
     });
