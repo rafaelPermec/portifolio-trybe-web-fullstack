@@ -6,10 +6,10 @@ const { verificaNumero } = require('./index.js');
 describe('Valida se na aplicação.', () => {
   describe('a função "verificaNumero":', () => {
     it('Vai receber um número como parâmetro e retornar uma string como resposta,', () => {
-      const number = typeof 'number';
-      const result = verificaNumero(number);
+      const string = 'string';
+      const result = verificaNumero(string);
 
-      expect(result).to.be.a('string');
+      expect(result).to.be.equals('o valor deve ser um número');
     });
   });
 
