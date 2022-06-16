@@ -41,11 +41,24 @@ describe('Valida se na aplicação,', () => {
 
 describe('Valida se na aplicação que escreverá um conteúdo em um arquivo específico', () => {
 
-  it('a função recebe dois parâmetros - o nome do arquivo e o conteúdo desse arquivo:', () => {
-
+  before(() => {
+    sinon.stub(fs, 'writeFile').returns('ok');
   });
 
-  it('dá retorno com um "ok":', () => {
+  after(() => {
+    fs.writeFile.restore();
+  });
 
+  it('se o retorno da função possui um valor do tipo esperado e com o texto "ok":', () => {
+    const result = escreveArquivo('arquivo.txt', 'olá familia!');
+
+    expect(result).to.be.a('string');
+    expect(result).to.be.equals('ok');
+  });
+
+  it('que o arquivo exista:', () => {
+    const result = escreveArquivo('arquivo.txt', 'olá familia!');
+
+    expect(result).to.exist('./arquivo.txt');
   });
 });
