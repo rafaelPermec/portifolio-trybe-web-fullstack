@@ -1,11 +1,10 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 
 const MovieController = require('./controllers/movieController');
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.post('/movies', MovieController.create);
 
