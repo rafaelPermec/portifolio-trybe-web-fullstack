@@ -54,11 +54,13 @@ describe('Valida se na aplicação que escreverá um conteúdo em um arquivo esp
 
     expect(result).to.be.a('string');
     expect(result).to.be.equals('ok');
+    expect(result).not.to.be.equals('okkkkk!');
   });
 
   it('que o arquivo exista:', () => {
-    const result = escreveArquivo('arquivo.txt', 'olá familia!');
+    const result = fs.readFileSync('arquivo.txt', 'utf-8');
 
-    expect(result).to.exist('./arquivo.txt');
+    expect(result).to.be.a('string');
+    expect(result).to.be.equals('olá familia!');
   });
 });

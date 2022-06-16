@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 function verificaNumero(number) {
   if (typeof number !== 'number') return 'o valor deve ser um número';
 
@@ -9,7 +11,8 @@ function verificaNumero(number) {
 };
 
 function escreveArquivo(arquivo, conteudo) {
-
+  fs.writeFileSync(arquivo, conteudo);
+  return 'ok';
 };
 
 module.exports = { verificaNumero, escreveArquivo };
