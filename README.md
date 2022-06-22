@@ -7,7 +7,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciências da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
@@ -43,133 +43,133 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _[Projeto - Meme Generator]()_
-- [x] 5-6: _[Projeto - Arte com Pixels]()_
+- [x] 5-6: _[Projeto - Arte com Pixels](https://rafaelpermec.github.io/pixel-art)_
 - [x] 5-7: _[Projeto - Lista de tarefas]()_
 - [x] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [x] 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [x] 6-1: _HTML & CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Part 1_
+- [x] 6-4: _CSS Flexbox - Part 2_
+- [x] 6-5: _CSS Responsivo - Mobile First_
+- [x] 6-6: _[Projeto - Trybewarts : CSS responsivo p/ todas as Midias!](https://rafaelpermec.github.io/trybewarts/)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [x] 7-2: _JavaScript ES6 - Objects_
+- [x] 7-3: _Testes unitários em JavaScript_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-5: _[Projeto - Zoo functions]()_
+- [x] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- [x] 8-5: _[Projeto - Zoo functions]()_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
+- [x] 9-2: _JavaScript Promises_
+- [x] 9-3: _[Projeto - Carrinho de Compras](https://rafaelpermec.github.io/trybeshopping)_
 
 ##### Bloco 10: Jest
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assí­ncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assí­ncrono e Mocking]()_
+- [x] 10-1: _Primeiros passos no Jest_
+- [x] 10-2: _Jest - Testes Assí­ncronos_
+- [x] 10-3: _Jest - Simulando comportamentos_
+- [x] 10-4: _[Projeto - Jest Assí­ncrono e Mocking]()_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Bloco 11: Introdução - React
 
-- [ ] 11-1: _'Hello, world!' no React!_
-- [ ] 11-2: _Componentes React_
-- [ ] 11-3: _[Projeto - Movie Cards Library]()_
+- [x] 11-1: _'Hello, world!' no React!_
+- [x] 11-2: _Componentes React_
+- [x] 11-3: _[Projeto - Solar System]()_
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _Components com estado_
-- [ ] 12-2: _Eventos e formulários no React_
-- [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 12-1: _Components com estado_
+- [x] 12-2: _Eventos e formulários no React_
+- [x] 12-3: _[Projeto - Tryunfo]()_
 
 ##### Bloco 13: React
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
+- [x] 13-2: _Ciclo de vida de componentes em React_
+- [x] 13-3: _React Router_
+- [x] 13-4: _[Projeto - TrybeTunes]()_
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologías Ágeis_
-- [ ] 14-2: _[Projeto - Frontend Online Store]()_
+- [x] 14-1: _Metodologías Ágeis_
+- [x] 14-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 15: Testes em React
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [x] 15-1: _Testando React com a React Testing Library_
+- [x] 15-2: _Testando React com a React Testing Library - Parte 2_
+- [x] 15-3: _[Projeto - Testes em React]()_
 
 ##### Bloco 16: Introdução ao Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - Prática_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes sÍncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [x] 16-1: _Introdução ao Redux_
+- [x] 16-2: _React com Redux - Parte 1_
+- [x] 16-3: _React com Redux - Prática_
+- [x] 16-4: _React com Redux - Parte 2_
+- [x] 16-5: _Testes sÍncronos com React-Redux_
+- [x] 16-6: _[Projeto - Tabela com filtros de dados]()_
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [x] 17-1: _[Projeto - Jogo de Trivia]()_
 
 ##### Bloco 18: React & Context API
 
-- [ ] 18-1: _Context API do React_
-- [ ] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 18-1: _Context API do React_
+- [x] 18-2: _React Hooks - useState e useContext_
+- [x] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Bloco 20: Introdução - Bancos de dados relacionais 
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: Filtrando dados de forma especÍfica
-- [ ] 20-4: _ Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: Filtrando dados de forma especÍfica
+- [x] 20-4: _ Manipulando tabelas_
+- [x] 20-5: _[Projeto - All For One]()_
 
 ##### Bloco 21: Bancos de dados relacionais
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs e UNIONs_
+- [x] 21-3: _Stored Routines & Subqueries_
+- [x] 21-4: _[Projeto - Vocabulary Booster]()_
 
 ##### Bloco 22: Bancos de dados relacionais
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalizaçã, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [x] 22-1: _Transformando ideias em um modelo de banco de dados_
+- [x] 22-2: _Normalizaçã, Formas Normais e Dumps_
+- [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [x] 22-3: _[Projeto - One For All]()_
 
 ##### Bloco 23: Introdução - NoSQL
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [x] 23-1: _MongoDB - Introdução_
+- [x] 23-2: _Filter Operators_
+- [x] 23-3: _[Projeto - Data Flights]()_
 
 ##### Bloco 24: Updates
 
@@ -219,7 +219,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 31-1: _[Projeto - Trybeer]()_
 
-##### Bloco 32: Arquitetura de Software
+##### Bloco 32: Arquitetura de Software :hourglass_flowing_sand:
 
 - [ ] 32-1: _Arquitetura - PrincÍpios SOLID_
 - [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
