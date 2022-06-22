@@ -4,18 +4,18 @@ module.exports = {
   up: async (queryInterface, Sequelize) => queryInterface.bulkInsert('Users',
     [
       {
-        fullName: 'Rafael',
+        full_name: 'Rafael',
         email: 'dev.rafaelpermec@gmail.com',
-        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
-        updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
         phone_num: '+5531987748874',
+        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       {
-        fullName: 'Perdigão',
+        full_name: 'Perdigão',
         email: 'geekchef.dev@gmail.com',
-        createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
-        updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
         phone_num: '+5531987748874',
+        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
       }
     ], {}),
 

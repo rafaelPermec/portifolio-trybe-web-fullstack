@@ -42,7 +42,7 @@ const findOne = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    const { fullName, email } = req.body;
+    const { full_name: fullName, email } = req.body;
     const newUser = await User.create({ fullName, email });
 
     return res.status(201).json(newUser);
@@ -54,8 +54,8 @@ const create = async (req, res) => {
 
 const updateWhereId = async (req, res) => {
   try {
-    const { fullName, email } = req.body;
     const { id } = req.params;
+    const { full_name: fullName, email } = req.body;
 
     const [updateUser] = await User.update(
       { fullName, email },

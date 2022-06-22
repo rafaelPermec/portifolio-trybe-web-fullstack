@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "debug": "nodemon index.js"
+    "debug": "nodemon index.js",
+    "test": "mocha ./tests/**/*$NAME*.test.js --exit"
   },
   "author": "Rafael P. M. Castro",
   "license": "ISC",
@@ -16,5 +17,12 @@
     "nodemon": "^2.0.16",
     "sequelize": "^6.21.0",
     "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "sequelize-test-helpers": "^1.4.2",
+    "sinon": "^14.0.0"
   }
 }
