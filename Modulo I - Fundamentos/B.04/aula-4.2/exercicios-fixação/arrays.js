@@ -11,7 +11,7 @@ console.log(menu[menuServices]);
 
 Procure o índice do valor "Portfólio" do array menu : */
 
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 let indexOfPortfolio = menu.indexOf('Portfólio');
 
 console.log(indexOfPortfolio);
@@ -20,7 +20,7 @@ console.log(indexOfPortfolio);
 
 Adicione o valor "Contato" no final do array menu : */
 
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-     menu.push('Contato');
+menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+menu.push('Contato');
 
-console.log(menu[menu.length-1]);
+console.log(menu[menu.length - 1]);
