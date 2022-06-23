@@ -1,11 +1,11 @@
-const Book = (sequelize, DataTypes) => {
-  const Book = sequelize.define("User", {
+const Bookschema = (sequelize, DataTypes) => {
+  const BooksTable = sequelize.define("User", {
     title: DataTypes.STRING,
     author: DataTypes.STRING,
     pageQuantity: DataTypes.INTEGER
   });
 
-  return Book;
+  return BooksTable;
 };
 
-module.exports = Book;
+module.exports = Bookschema;

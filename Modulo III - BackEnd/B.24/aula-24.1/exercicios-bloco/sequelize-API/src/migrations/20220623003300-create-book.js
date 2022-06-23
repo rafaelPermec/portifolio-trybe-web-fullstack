@@ -1,4 +1,5 @@
-'use strict';
+const sequelize = require('sequelize');
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('Books', {
@@ -10,19 +11,24 @@ module.exports = {
       },
       title: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING(120),
       },
       author: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100),
       },
       pageQuantity: {
         allowNull: false,
         type: Sequelize.INTEGER
       },
+      available: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: true,
+      },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: sequelize.literal('NOW()'),
       },
       updatedAt: {
         allowNull: false,
