@@ -14,7 +14,7 @@ const createBooks = async (req, res) => {
   return res.status(201).json(newBook);
 };
 
-const postBooks = async () => { };
+const updateBooks = async () => { };
 
 const deleteBooks = async () => { };
 
@@ -23,6 +23,6 @@ module.exports = {
   getAllBooks,
   getAllBooksbyId,
   createBooks,
-  postBooks,
+  updateBooks,
   deleteBooks,
 };

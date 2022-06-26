@@ -7,16 +7,16 @@ const getAllBooks = async () => {
 
 const getAllBooksbyId = async (id) => { };
 
-const createBooks = async () => { };
+const createBooks = async (data) => { };
 
-const postBooks = async () => { };
+const updateBooks = async () => { };
 
-const deleteBooks = async () => { };
+const deleteBooks = async (id) => { };
 
 module.exports = {
   getAllBooks,
   getAllBooksbyId,
   createBooks,
-  postBooks,
+  updateBooks,
   deleteBooks,
 };
