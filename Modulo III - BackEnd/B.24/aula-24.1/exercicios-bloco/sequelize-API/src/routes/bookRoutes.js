@@ -4,7 +4,7 @@ const router = express.Router();
 const bookControllers = require('../controllers/bookControllers');
 
 router
-  .get('/', bookControllers.getAllBooks, bookControllers.getByAuthor)
+  .get('/', bookControllers.getAllBooks)
   .post('/', bookControllers.updateBooks);
 
 router
