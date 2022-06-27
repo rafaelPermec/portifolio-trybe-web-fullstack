@@ -49,6 +49,13 @@ const updateBooks = async (req, res) => {
 
 const deleteBooks = async (req, res) => {
   const { id } = req.body;
+
+  try {
+    const removedBook = await BookServices.deleteBooks(id);
+    res.status(201).json({ message: 'Book removed successfully!' });
+  } catch (error) {
+    res.status(401).json(notFound);
+  }
 };
 
 
