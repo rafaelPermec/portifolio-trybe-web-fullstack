@@ -1,11 +1,20 @@
 {
   "name": "table-relationships",
   "version": "1.0.0",
-  "description": "A exercise about table realationships in databases w/ ORM, Sequelize, Mongoose and Node.js",
+  "description": "My studies about table normalization and relationshops in Objetct-Relational Mapping (ORM) patterns and Sequelize framework to Node.js REST API's",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "debug": "nodemon index.js",
+    "test": "mocha ./tests/**/*$NAME*.test.js --exit"
   },
   "author": "Rafael P. M. Castro",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.18",
+    "sequelize": "^6.21.1",
+    "sequelize-cli": "^6.4.1"
+  }
 }
