@@ -58,7 +58,16 @@ const deleteBooks = async (req, res) => {
   }
 };
 
-const getByAuthor = async (req, res) => { };
+const getByAuthor = async (req, res) => {
+  const { author } = req.query;
+
+  try {
+    const bookByAuthor = await BookServices.getByAuthor(author);
+    res.status(201).json(bookByAuthor);
+  } catch (error) {
+    res.status(401).json(notFound);
+  }
+};
 
 
 module.exports = {
@@ -67,4 +76,5 @@ module.exports = {
   createBooks,
   updateBooks,
   deleteBooks,
+  getByAuthor,
 };
