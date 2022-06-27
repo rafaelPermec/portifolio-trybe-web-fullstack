@@ -5,11 +5,21 @@ const getAllBooks = async () => {
   return books;
 };
 
-const getAllBooksbyId = async (id) => { };
+const getAllBooksbyId = async (id) => {
+  const book = await Books.findByPk(id);
+  return book;
+};
 
-const createBooks = async (data) => { };
+const createBooks = async ({ title, author, pageQuantity, available }) => {
+  const newBook = Books.create({ title, author, pageQuantity, available });
+  return newBook;
+};
 
-const updateBooks = async () => { };
+const updateBooks = async (id, { title, author, pageQuantity, available }) => {
+  const [updated] = await Books
+    .update({ title, author, pageQuantity, available }, { where: { id } });
+  return updated;
+};
 
 const deleteBooks = async (id) => { };
 
