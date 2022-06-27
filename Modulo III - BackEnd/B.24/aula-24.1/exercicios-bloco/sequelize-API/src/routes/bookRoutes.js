@@ -4,8 +4,8 @@ const router = express.Router();
 const bookControllers = require('../controllers/bookControllers');
 
 router
-  .get('/', bookControllers.getAllBooks)
-  .post('/', bookControllers.postBooks);
+  .get('/', bookControllers.getAllBooks, bookControllers.getByAuthor)
+  .post('/', bookControllers.updateBooks);
 
 router
   .get('/:id', bookControllers.getAllBooksbyId)
