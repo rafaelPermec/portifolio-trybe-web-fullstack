@@ -3,8 +3,13 @@ const router = express.Router();
 
 const bookControllers = require('../controllers/bookControllers');
 
-router.get('/');
+router
+  .get('/', bookControllers.getAllBooks)
+  .post('/', bookControllers.postBooks);
 
-router.get('/:id');
+router
+  .get('/:id', bookControllers.getAllBooksbyId)
+  .put('/:id', bookControllers.updateBooks)
+  .delete('/:id', bookControllers.deleteBooks);
 
 module.exports = router;
