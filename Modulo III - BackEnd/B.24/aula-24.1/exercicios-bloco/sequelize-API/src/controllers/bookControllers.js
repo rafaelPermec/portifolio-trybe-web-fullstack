@@ -47,7 +47,9 @@ const updateBooks = async (req, res) => {
   }
 };
 
-const deleteBooks = async () => { };
+const deleteBooks = async (req, res) => {
+  const { id } = req.body;
+};
 
 
 module.exports = {
