@@ -12,7 +12,7 @@ const getAllBooks = async (_req, res) => {
   }
 };
 
-const getAllBooksbyId = async (id) => {
+const getAllBooksbyId = async (req, res) => {
   const { id } = req.params;
 
   try {

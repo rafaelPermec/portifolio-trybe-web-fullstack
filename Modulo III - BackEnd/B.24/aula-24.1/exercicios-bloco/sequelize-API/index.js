@@ -6,6 +6,6 @@ const booksRoutes = require('./src/routes/bookRoutes');
 
 app.use(express.json());
 
-app.get('/books', booksRoutes);
+app.use('/books', booksRoutes);
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}!`));
