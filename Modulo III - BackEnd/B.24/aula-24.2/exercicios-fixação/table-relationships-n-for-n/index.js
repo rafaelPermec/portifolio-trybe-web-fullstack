@@ -1,5 +1,7 @@
-const { Book, User } = require('./models');
-// ...
+const express = require('express');
+const app = express();
+const { Book, User } = require('./src/models');
+
 app.get('/usersbooks/:id', async (req, res) => {
   try {
     const { id } = req.params;
@@ -17,3 +19,8 @@ app.get('/usersbooks/:id', async (req, res) => {
     res.status(500).json({ message: 'Algo deu errado' });
   };
 });
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));
+
+module.exports = app;

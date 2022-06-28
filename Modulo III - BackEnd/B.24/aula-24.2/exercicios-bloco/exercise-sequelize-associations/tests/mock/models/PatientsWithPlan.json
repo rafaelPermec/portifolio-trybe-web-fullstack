@@ -1,0 +1,47 @@
+[
+  {
+    "patient_id": 1,
+    "fullname": "Alberto Dos Santos",
+    "plan": {
+      "plan_id": 1,
+      "coverage": "Total",
+      "price": 549.99
+    }
+  },
+  {
+    "patient_id": 4,
+    "fullname": "Cristiano Ronaldo Messi",
+    "plan": {
+      "plan_id": 2,
+      "coverage": "Partial",
+      "price": 349.99
+    }
+  },
+  {
+    "patient_id": 2,
+    "fullname": "Maria Silveira Rodrigues",
+    "plan": {
+      "plan_id": 3,
+      "coverage": "Emergencies only",
+      "price": 109.99
+    }
+  },
+  {
+    "patient_id": 3,
+    "fullname": "Osvaldo de Andrade",
+    "plan": {
+      "plan_id": 3,
+      "coverage": "Emergencies only",
+      "price": 109.99
+    }
+  },
+  {
+    "patient_id": 5,
+    "fullname": "Luis Carlos Suarez",
+    "plan": {
+      "plan_id": 3,
+      "coverage": "Emergencies only",
+      "price": 109.99
+    }
+  }
+]
