@@ -1,4 +1,3 @@
-// models/Address.js
 module.exports = (sequelize, DataTypes) => {
   const Address = sequelize.define('Address', {
     id: {
