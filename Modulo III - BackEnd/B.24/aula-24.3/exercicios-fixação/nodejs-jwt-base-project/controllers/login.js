@@ -1,4 +1,8 @@
 const { User } = require('../models');
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
+
+const secret = process.env.JWT_SECRET;
 
 const validateBody = (body, res) => {
   const { username, password } = body;
@@ -16,17 +20,22 @@ const validateBody = (body, res) => {
 module.exports = async (req, res) => {
   try {
     const { username, password } = req.body;
-    
+
     if (!validateBody(req.body, res)) return;
 
     const user = await User.findOne({ where: { username } });
-  
+
     if (!user || user.password !== password) {
       return res
         .status(401)
         .json({ message: 'Usuário não existe ou senha inválida' });
-    }
-    return res.status(200).json({ message: 'Login efetuado com sucesso' });
+    };
+
+    const jwtConfig = { expiresIn: '7d', algorithm: 'HS256' };
+
+    const token = jwt.sign({ data: user }, secret, jwtConfig);
+
+    return res.status(200).json({ token });
   } catch (err) {
     return res
       .status(500)
