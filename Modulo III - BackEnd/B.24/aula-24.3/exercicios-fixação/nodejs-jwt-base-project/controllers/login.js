@@ -1,4 +1,8 @@
 const { User } = require('../models');
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
+
+const secret = process.env.JWT_SECRET;
 
 const validateBody = (body, res) => {
   const { username, password } = body;
@@ -16,11 +20,13 @@ const validateBody = (body, res) => {
 module.exports = async (req, res) => {
   try {
     const { username, password } = req.body;
-    
+
     if (!validateBody(req.body, res)) return;
 
     const user = await User.findOne({ where: { username } });
-  
+
+    const jwtConfig = { expiresin: '7d', algorithm: 'HS256' };
+
     if (!user || user.password !== password) {
       return res
         .status(401)
