@@ -25,14 +25,17 @@ module.exports = async (req, res) => {
 
     const user = await User.findOne({ where: { username } });
 
-    const jwtConfig = { expiresin: '7d', algorithm: 'HS256' };
-
     if (!user || user.password !== password) {
       return res
         .status(401)
         .json({ message: 'Usuário não existe ou senha inválida' });
-    }
-    return res.status(200).json({ message: 'Login efetuado com sucesso' });
+    };
+
+    const jwtConfig = { expiresin: '7d', algorithm: 'HS256' };
+
+    const token = jwt.sign({ data: user }, secret, jwtConfig);
+
+    return res.status(200).json({ token });
   } catch (err) {
     return res
       .status(500)
