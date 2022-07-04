@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Rafael P. M. Castro",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.3",
+    "@types/node": "^18.0.1"
+  }
 }
