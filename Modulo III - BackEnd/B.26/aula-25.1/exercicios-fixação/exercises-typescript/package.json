@@ -1,0 +1,15 @@
+{
+  "name": "exercises-typescript",
+  "version": "1.0.0",
+  "description": "My first API models with Typescript language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.3",
+    "@types/node": "^18.0.1"
+  }
+}
