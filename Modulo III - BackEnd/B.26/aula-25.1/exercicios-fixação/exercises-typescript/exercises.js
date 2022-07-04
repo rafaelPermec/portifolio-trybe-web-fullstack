@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
+exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
 function greeter(name) {
     return "Ol\u00E1 ".concat(name);
 }
@@ -30,4 +30,9 @@ function square(side) {
     return Math.pow(side, 2);
 }
 exports.square = square;
+;
+function rectangle(base, height) {
+    return base * height;
+}
+exports.rectangle = rectangle;
 ;
