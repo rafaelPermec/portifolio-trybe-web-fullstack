@@ -1,0 +1,3 @@
+[submodule "Modulo III - BackEnd/Modulo"]
+	path = Modulo III - BackEnd/Modulo
+	url = https://github.com/rafaelPermec/heroku-first-deploy
