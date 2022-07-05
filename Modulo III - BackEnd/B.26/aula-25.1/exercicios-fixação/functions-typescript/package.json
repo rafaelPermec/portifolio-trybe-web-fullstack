@@ -1,5 +1,5 @@
 {
-  "name": "funcions-typescript",
+  "name": "functions-typescript",
   "version": "1.0.0",
   "description": "A boilerplate exercise about Typescript funcions",
   "main": "index.js",
@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Rafael P. M. Castro",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.3",
+    "@types/node": "^18.0.1"
+  }
 }
