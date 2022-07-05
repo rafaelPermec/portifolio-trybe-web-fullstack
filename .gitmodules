@@ -1,3 +1,6 @@
 [submodule "Modulo III - BackEnd/Modulo"]
 	path = Modulo III - BackEnd/Modulo
 	url = https://github.com/rafaelPermec/heroku-first-deploy
+[submodule "Modulo III - BackEnd/B.25/aula-25.2/exercicios-fixação/Modulo"]
+	path = Modulo III - BackEnd/B.25/aula-25.2/exercicios-fixação/Modulo
+	url = https://github.com/rafaelPermec/heroku-first-deploy-backend
