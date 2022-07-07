@@ -14,7 +14,7 @@ app.get('/', (_req: Request, res: Response) => {
   res.status(StatusCodes.OK).send(`Express + TypesScript`)
 });
 
-app.use(BookRoutes);
+app.use('/books', BookRoutes);
 
 app.use(errorMiddleware);
 
