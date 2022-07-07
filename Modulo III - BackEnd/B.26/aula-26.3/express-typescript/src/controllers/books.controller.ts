@@ -36,6 +36,13 @@ class BooksController {
     res.status(StatusCodes.NO_CONTENT).end();
   };
 
+  public delete = async (req: Request, res: Response) => {
+    const { id } = req.params;
+    await this.bookService.delete(parseInt(id));
+
+    res.status(StatusCodes.OK).json({ message: `Book deleted successfully` });
+  };
+
 }
 
 export default BooksController;

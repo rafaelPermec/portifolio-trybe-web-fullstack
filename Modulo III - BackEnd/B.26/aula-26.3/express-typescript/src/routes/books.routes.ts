@@ -12,6 +12,7 @@ router
 
 router
   .get('/:id', booksController.getById)
-  .put('/:id', validationBook, booksController.update);
+  .put('/:id', validationBook, booksController.update)
+  .delete('/:id', booksController.delete);
 
 export default router;
