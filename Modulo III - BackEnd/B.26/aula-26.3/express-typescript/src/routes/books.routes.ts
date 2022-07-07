@@ -10,6 +10,8 @@ router
   .get('/', booksController.getAll)
   .post('/', validationBook, booksController.create);
 
-router.get('/:id', booksController.getById);
+router
+  .get('/:id', booksController.getById)
+  .put('/:id', validationBook, booksController.update);
 
 export default router;
