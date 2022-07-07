@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
-import errorMiddleware from './error.middleware';
-import BookRoutes from './routes/books.routes';
+import errorMiddleware from './src/middlewares/error.middleware';
+import BookRoutes from './src/routes/books.routes';
 import 'express-async-errors';
 
 const app = express();
