@@ -1,10 +1,10 @@
-export interface IPost {
-  title: string;
-  author: string;
+export interface IRestaurant {
+  name: string;
   category: string;
-  publicationDate: string;
+  openingTime: string;
+  closingTime: string;
 }
 
-export interface Post extends IPost {
+export interface Restaurant extends IRestaurant {
   id: number;
 }
