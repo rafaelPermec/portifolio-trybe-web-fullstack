@@ -1,0 +1,11 @@
+{
+  "name": "products-api",
+  "version": "1.0.0",
+  "description": "Part 3/4 of an exercise about CRUD management in RESTFUL API's with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael P. M. Castro",
+  "license": "ISC"
+}
