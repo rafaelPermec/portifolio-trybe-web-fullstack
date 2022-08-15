@@ -9,4 +9,4 @@ mongoimport --db=rafaelPermec --collection=restaurants --file=../superheroes-mon
 db.superheroes.remove({ "publisher": "George Lucas" });
 
 db.superheroes.countDocuments({});
-# 733
+# 719
