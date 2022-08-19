@@ -1,4 +1,4 @@
-namespace primeiros_testes;
+namespace testing;
 
 public class UnitTest1
 {

@@ -6114,11 +6114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/primeiros-testes/primeiros-testes.csproj",
-      "projectName": "primeiros-testes",
-      "projectPath": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/primeiros-testes/primeiros-testes.csproj",
+      "projectUniqueName": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/testing/testing.csproj",
+      "projectName": "testing",
+      "projectPath": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/testing/testing.csproj",
       "packagesPath": "/home/geekchef/.nuget/packages/",
-      "outputPath": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/primeiros-testes/obj/",
+      "outputPath": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/testing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/geekchef/.nuget/NuGet/NuGet.Config"

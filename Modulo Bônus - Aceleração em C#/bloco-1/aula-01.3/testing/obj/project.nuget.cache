@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KHB23xzJ4i9QZ7vTTPxa/H4++BGp/PEyJihvXA9eMuuFJ9eLWeSf6rbnwRjplvLjk9wtH98ScZP1IJCixowgPA==",
+  "dgSpecHash": "wUfrPhFpX7sZGIp30JPyU/7thn73rLHS2iUDCxaHeazMIn7KX/7boKKGTapqrrnZ4Yrvv5Yruknef97IaykXiw==",
   "success": true,
-  "projectFilePath": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/primeiros-testes/primeiros-testes.csproj",
+  "projectFilePath": "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/testing/testing.csproj",
   "expectedPackageFiles": [
     "/home/geekchef/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/home/geekchef/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
