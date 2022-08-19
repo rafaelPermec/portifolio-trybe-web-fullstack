@@ -1,0 +1,15 @@
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.csproj.AssemblyReference.cache
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.GeneratedMSBuildEditorConfig.editorconfig
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.AssemblyInfoInputs.cache
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.AssemblyInfo.cs
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.csproj.CoreCompileInputs.cache
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/bin/Debug/net6.0/greet
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/bin/Debug/net6.0/greet.deps.json
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/bin/Debug/net6.0/greet.runtimeconfig.json
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/bin/Debug/net6.0/greet.dll
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/bin/Debug/net6.0/greet.pdb
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.dll
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/refint/greet.dll
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.pdb
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/greet.genruntimeconfig.cache
+/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo Bônus - Aceleração em C#/bloco-1/aula-01.3/greet/obj/Debug/net6.0/ref/greet.dll
