@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import * as sinon from 'sinon';
-import { NextFunction, Request, Response } from 'express';
+import { Request, Response } from 'express';
 import { allFrameMockWithId, frameMock, frameMockWithId } from '../../mocks/frameMock.test';
 import FrameController from '../../../controllers/frame.controller';
 import FrameService from '../../../services/frame.service';

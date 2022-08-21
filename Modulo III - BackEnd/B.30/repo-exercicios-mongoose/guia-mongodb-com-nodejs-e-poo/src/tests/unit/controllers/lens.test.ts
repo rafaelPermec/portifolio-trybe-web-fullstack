@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import * as sinon from 'sinon';
-import { NextFunction, Request, Response } from 'express';
+import { Request, Response } from 'express';
 import { lensMock, lensMockWithId, allLensMockWithId } from '../../mocks/lensMock.test';
 import LensController from '../../../controllers/lens.controller';
 import LensService from '../../../services/lens.service';
