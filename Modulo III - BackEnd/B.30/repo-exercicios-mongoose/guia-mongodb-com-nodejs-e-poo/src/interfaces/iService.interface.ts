@@ -1,8 +1,8 @@
 interface IService<T> {
   create(obj: T): Promise<T>,
-  readOne(_id: string): Promise<T | null>,
-  destroy(_id: string): Promise<T | null>,
-  read(): Promise<T[] | null>,
+  readOne(_id: string): Promise<T>,
+  destroy(_id: string): Promise<T>,
+  read(): Promise<T[]>,
 }
 
 export default IService;
