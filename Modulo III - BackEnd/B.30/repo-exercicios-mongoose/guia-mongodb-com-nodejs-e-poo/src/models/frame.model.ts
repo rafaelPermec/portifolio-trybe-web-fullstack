@@ -4,7 +4,7 @@ import MongoModel from './mongo.model';
 
 const frameMongooseSchema = new Schema<IFrame>({
   material: String,
-  color: String
+  color: String,
 });
 
 class Frame extends MongoModel<IFrame> {
