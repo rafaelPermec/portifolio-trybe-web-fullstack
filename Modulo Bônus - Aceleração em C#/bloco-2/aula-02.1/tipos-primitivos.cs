@@ -28,13 +28,32 @@ long h = -2444888;
 ulong i = 2444888;
 
 // float	Valores de ponto flutuante de até 7 dígitos. Ex: -3.402823e38 a 3.402823e38
-float j = -1.7777777;
+float j = -1.7777777f;
 
 // double	Valores de ponto flutuante de até 15 dígitos. Ex: -1.79769313486232e308 a 1.79769313486232e308
-double k = -1.123456789101112;
+double k = -1.123456789101112d;
 
 // decimal	Números com até 28 casas decimais. Ex: 0.991m, 33.333m
-decimal l = 0.12345678910111213141516171819;
+decimal l = 0.12345678910111213141516171819M;
 
 // char	Um unico caractere delimitado por aspas simples. Ex: ‘ç’,’M’,’f’
 char m = 'ú';
+
+// Tipos implicitos não precisam de especificação em sua tipagem:
+var curso = "Aceleração em C# e .NET";
+var media = 3.14M;
+
+// Declaração de multiplas variaveis:
+int n = 10, o = 11, p = 12, q;
+q = 13;
+
+// Saída de Dados:
+Console.WriteLine("O valor da variavel n é " + n + " e o valor de o é " + o);
+
+Console.WriteLine(p + " + " + q + " = " + (p + q));
+
+Console.WriteLine(p + " - " + q + " = " + (p - q));
+
+Console.WriteLine(p + " * " + q + " = " + (p * q));
+
+Console.WriteLine(p + " / " + q + " = " + (p / q));
