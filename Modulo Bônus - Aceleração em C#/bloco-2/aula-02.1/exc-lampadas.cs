@@ -1,6 +1,6 @@
 //ENTRADA DE DADOS
 Console.WriteLine("Boas vindas ao programa 'Calcula Lâmpada'!");
-Console.WriteLine("Informe o nome do còmodo: ");
+Console.WriteLine("Informe o nome do cômodo: ");
 string convenient = Console.ReadLine();
 
 Console.WriteLine("Informe em metros a largura deste cômodo: ");
