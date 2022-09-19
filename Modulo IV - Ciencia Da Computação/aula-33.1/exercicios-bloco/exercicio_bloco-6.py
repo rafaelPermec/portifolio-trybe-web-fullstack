@@ -9,13 +9,13 @@ def triangle_type (side1, side2, side3):
   );
 
   equilatero = side1 == side2 == side3;
-  isósceles = side1 == side2 or side2 == side3 or side1 == side3;
+  isosceles = side1 == side2 or side2 == side3 or side1 == side3;
 
   if not is_triangle:
     return print('Não é um triângulo')
   elif equilatero:
     return print('triângulo equilátero')
-  elif isósceles:
+  elif isosceles:
     return print('triângulo isósceles')
   else:
     return print('triângulo escaleno')
