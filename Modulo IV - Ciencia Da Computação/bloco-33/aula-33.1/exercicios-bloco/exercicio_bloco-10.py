@@ -25,6 +25,8 @@ def fuel_store (type, litters):
     if litters > 20:
       total_price = (litters * G_price) - (litters * 6/100)
       return print(f'R${total_price}')
+  else:
+    return print('Please, specify a type with "A" for alcohol or "G" for gasoline')
 
 fuel_store('A', 10)
 fuel_store('A', 30)
