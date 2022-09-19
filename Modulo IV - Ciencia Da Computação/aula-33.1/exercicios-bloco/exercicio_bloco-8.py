@@ -6,4 +6,3 @@ def print_triangle (rows):
 
 
 print_triangle(10)
-
