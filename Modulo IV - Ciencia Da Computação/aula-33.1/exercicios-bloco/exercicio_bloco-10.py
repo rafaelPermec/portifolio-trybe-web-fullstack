@@ -26,8 +26,7 @@ def fuel_store (type, litters):
       total_price = (litters * G_price) - (litters * 6/100)
       return print(f'R${total_price}')
 
-
-fuel_store('G', 10)
-fuel_store('G', 30)
 fuel_store('A', 10)
 fuel_store('A', 30)
+fuel_store('G', 10)
+fuel_store('G', 30)
