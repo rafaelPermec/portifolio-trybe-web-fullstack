@@ -20,3 +20,4 @@ print(f'''A soma dos valores que você digitou é:
 TANTANTAAAAAAAN ! ~fogos de arificio~ ~xablau pra todo lado~
 
 {soma} !!!''')
+
