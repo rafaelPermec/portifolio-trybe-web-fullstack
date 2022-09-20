@@ -1,11 +1,11 @@
 # Exercício 2: Escreva um programa que receba vários números naturais e calcule a soma desses valores. Caso algum valor da entrada seja inválido (por exemplo uma letra), uma mensagem deve ser exibida na saída de erros no seguinte formato: “Erro ao somar valores, {valor} é um valor inválido”. Ao final, você deve imprimir a soma dos valores válidos.
 
 numeros_usuario = input(
-  '''Por favor, coloque os valores que deseja somar, separados por espaço! 
+  '''Por favor, coloque os valores inteiros que deseja somar, separados por virgula! 
   Aqui: '''
   )
 
-input_numeros_em_dict = numeros_usuario.split(' ')
+input_numeros_em_dict = numeros_usuario.split(', ')
 
 soma = 0
 
