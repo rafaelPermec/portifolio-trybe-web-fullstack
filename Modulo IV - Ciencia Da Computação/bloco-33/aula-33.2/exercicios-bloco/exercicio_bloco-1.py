@@ -2,11 +2,9 @@
 
 # Entrada:
 
-# Copiar
 # PEDRO
 # Saída:
 
-# Copiar
 # PEDRO
 # PEDR
 # PED
