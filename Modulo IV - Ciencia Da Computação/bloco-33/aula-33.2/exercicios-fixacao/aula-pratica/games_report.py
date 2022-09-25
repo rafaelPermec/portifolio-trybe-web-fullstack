@@ -1,5 +1,6 @@
 import json
 
+# Metódo Try para captar excessões:
 try:
     with open("video_games.json", mode="r") as file:
         video_games = json.load(file)
@@ -13,8 +14,11 @@ finally:
     print("Tudo que era para acontecer, aconteceu. Pode coletar o lixo aqui!")
 
 
-# Genres:
+# Capturando genres:
 game_genres = set()
 
 for game in video_games:
-    print(game["Title"])
+    for genre in game["Metadata"]["Genres"].split(','):
+        game_genres.add(genre)
+
+print(game_genres)
