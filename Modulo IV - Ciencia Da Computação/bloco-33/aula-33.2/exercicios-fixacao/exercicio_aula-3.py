@@ -1,4 +1,5 @@
-# Exercício 3: Dado um arquivo contendo estudantes e suas respectivas notas, escreva um programa que:
+# Exercício 3: Dado um arquivo contendo estudantes e suas
+# respectivas notas, escreva um programa que:
 
 # lê todas essas informações;
 # aplique um filtro, mantendo somente as pessoas que estão reprovadas;
@@ -18,14 +19,14 @@
 estudantes_em_recuperacao = []
 
 with open('./exemplo/alunos.txt') as file:
-  for line in file:
-    estudantes = line
-    estudantes = estudantes.split(' ')
+    for line in file:
+        estudantes = line
+        estudantes = estudantes.split(' ')
     if int(estudantes[1]) < 6:
-      estudantes_em_recuperacao.append(estudantes[0])
+        estudantes_em_recuperacao.append(estudantes[0])
 
 
-with open('./exemplo/alunos_recuperacao.txt', mode = 'w') as abaixo_de_seis:
-  for aluno in estudantes_em_recuperacao:
-    print(aluno)
+with open('./exemplo/alunos_recuperacao.txt', mode='w') as abaixo_de_seis:
+    for aluno in estudantes_em_recuperacao:
+        print(aluno)
     abaixo_de_seis.writelines(aluno)

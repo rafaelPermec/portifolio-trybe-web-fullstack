@@ -1,4 +1,5 @@
-# Exercício 1: Faça um programa que solicite o nome de uma pessoa usuária e imprima-o na vertical. Exemplo:
+# Exercício 1: Faça um programa que solicite o nome de uma pessoa usuária
+# e imprima-o na vertical. Exemplo:
 
 # F
 # U
@@ -12,5 +13,4 @@ nome_usuario = input(
   )
 
 for letters in nome_usuario:
-  print(letters)
-
+    print(letters)
