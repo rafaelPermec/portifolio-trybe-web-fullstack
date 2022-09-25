@@ -10,9 +10,19 @@ except json.decoder.JSONDecodeError as apelido:
     print(f"Formatação de JSON incorreta. Erro: {apelido}")
 # except:
 #     print("não deu certo! =/")
-finally:
-    print("Tudo que era para acontecer, aconteceu. Pode coletar o lixo aqui!")
+# finally:
+#     print(
+#       "Tudo que era para acontecer, aconteceu. Pode coletar o lixo aqui!"
+#     )
 
+# Capturando titles:
+game_titles = set()
+
+for game in video_games:
+    for title in game["Title"].split(','):
+        game_titles.add(title)
+
+print(f'São {len(game_titles)} titulos disponiveis.')
 
 # Capturando genres:
 game_genres = set()
