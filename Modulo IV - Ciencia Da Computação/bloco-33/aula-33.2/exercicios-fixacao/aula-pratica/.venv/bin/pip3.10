@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/geekchef/trybe-portfolio-exercicios-turma.XP-2021/Modulo IV - Ciencia Da Computação/bloco-33/aula-33.2/exercicios-fixacao/aula-pratica/.venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
