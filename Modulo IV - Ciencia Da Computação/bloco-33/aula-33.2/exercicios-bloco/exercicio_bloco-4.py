@@ -15,35 +15,51 @@
 # na programação =/
 
 import json
-
-with open('./exercicios-bloco/inputs/books.json', mode='r') as file:
-    all_books = json.load(file)
+import csv
 
 
-def count_books_by_categorie(books):
+def retrieve_books(file):
+    return json.load(file)
+
+
+def count_books_by_categories(books):
     categories = {}
     for book in books:
-        for category in book['categories']:
+        for category in book["categories"]:
             if not categories.get(category):
                 categories[category] = 0
             categories[category] += 1
     return categories
 
 
-def calcultate_percentage_of_books(books):
-    all_books_by_percentage = []
-    for book in books.items():
-        percentage_books = {}
-        percentage_books['category'] = book[0]
-        percentage_books['percentage'] = f'''{
-          round(
-            (int(book[1]) * 100) / len(all_books), 2
-            )
-          }%'''
-        all_books_by_percentage.append(percentage_books)
-
-    return print(all_books_by_percentage)
+def calculate_percentage_by_category(book_count_by_category, total_books):
+    return [
+        [category, num_books / total_books]
+        for category, num_books in book_count_by_category.items()
+    ]
 
 
-counting_books_categories = count_books_by_categorie(all_books)
-calcultate_percentage_of_books(counting_books_categories)
+def write_csv_report(file, header, rows):
+    writer = csv.writer(file)
+    writer.writerow(header)
+    writer.writerows(rows)
+
+
+if __name__ == "__main__":
+    # retrieve books
+    with open("./exercicios-bloco/inputs/books.json", mode="r") as file:
+        books = retrieve_books(file)
+
+    # count by category
+    book_count_by_category = count_books_by_categories(books)
+
+    # calculate percentage
+    number_of_books = len(books)
+    books_percentage_rows = calculate_percentage_by_category(
+        book_count_by_category, number_of_books
+    )
+
+    # write csv
+    header = ["categoria", "percentagem"]
+    with open("./exercicios-bloco/inputs/books_report.csv", mode="w") as file:
+        write_csv_report(file, header, books_percentage_rows)
