@@ -21,4 +21,18 @@ for game in video_games:
     for genre in game["Metadata"]["Genres"].split(','):
         game_genres.add(genre)
 
-print(game_genres)
+print(
+  f"São {len(game_genres)} generos de jogos citados no documento. \n"
+  f"Os generos citados no documento são: {game_genres}"
+  )
+
+# Capturando consoles:
+console = set()
+
+for game in video_games:
+    console.add(game['Release']['Console'])
+
+print(
+  f"{len(console)} consoles estão disponiveis para jogar! \n"
+  f'Os consoles disponiveis no documento são: {console}'
+  )
