@@ -34,7 +34,7 @@ def count_books_by_categories(books):
 
 def calculate_percentage_by_category(book_count_by_category, total_books):
     return [
-        [category, num_books / total_books]
+        [category, round(((num_books * 100) / total_books), 2)]
         for category, num_books in book_count_by_category.items()
     ]
 

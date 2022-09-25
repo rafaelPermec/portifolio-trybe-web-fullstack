@@ -1,39 +1,39 @@
 categoria,percentagem
-Open Source,0.004640371229698376
-Mobile,0.002320185614849188
-Java,0.22273781902552203
-Software Engineering,0.037122969837587005
-Internet,0.0951276102088167
-Web Development,0.03944315545243619
-Miscellaneous,0.004640371229698376
-Microsoft .NET,0.07888631090487239
-Microsoft,0.018561484918793503
-Next Generation Databases,0.002320185614849188
-PowerBuilder,0.016241299303944315
-Client-Server,0.025522041763341066
-Computer Graphics,0.013921113689095127
-Object-Oriented Programming,0.009280742459396751
-S,0.002320185614849188
-Networking,0.016241299303944315
-Theory,0.016241299303944315
-Programming,0.027842227378190254
-Python,0.013921113689095127
-Mobile Technology,0.013921113689095127
-Business,0.027842227378190254
-P,0.002320185614849188
-XML,0.009280742459396751
-Perl,0.013921113689095127
-java,0.002320185614849188
-Microsoft/.NET,0.002320185614849188
-Miscella,0.002320185614849188
-Object-Technology Programming,0.002320185614849188
-,0.004640371229698376
-internet,0.002320185614849188
-.NET,0.002320185614849188
-Algorithmic Art,0.002320185614849188
-PHP,0.002320185614849188
-SOA,0.002320185614849188
-Computer Graph,0.002320185614849188
-Client Server,0.002320185614849188
-In Action,0.002320185614849188
-Software Development,0.002320185614849188
+Open Source,0.46
+Mobile,0.23
+Java,22.27
+Software Engineering,3.71
+Internet,9.51
+Web Development,3.94
+Miscellaneous,0.46
+Microsoft .NET,7.89
+Microsoft,1.86
+Next Generation Databases,0.23
+PowerBuilder,1.62
+Client-Server,2.55
+Computer Graphics,1.39
+Object-Oriented Programming,0.93
+S,0.23
+Networking,1.62
+Theory,1.62
+Programming,2.78
+Python,1.39
+Mobile Technology,1.39
+Business,2.78
+P,0.23
+XML,0.93
+Perl,1.39
+java,0.23
+Microsoft/.NET,0.23
+Miscella,0.23
+Object-Technology Programming,0.23
+,0.46
+internet,0.23
+.NET,0.23
+Algorithmic Art,0.23
+PHP,0.23
+SOA,0.23
+Computer Graph,0.23
+Client Server,0.23
+In Action,0.23
+Software Development,0.23
