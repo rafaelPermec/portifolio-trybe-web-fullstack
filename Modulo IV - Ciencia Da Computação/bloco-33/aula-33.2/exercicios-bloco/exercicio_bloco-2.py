@@ -12,3 +12,32 @@
 # 🦜 O sorteio de uma palavra aleatória pode ser feito utilizando
 # o método choice:
 # random.choice(["word1", "word2", "word3"]) -> "word2".
+
+WORDS = [
+  'cadê',
+  'meu',
+  'feedback',
+  'estruturado',
+  'apos',
+  'estudo',
+  'anual',
+  'voltado',
+  'para',
+  'empresa',
+  'XP?'
+]
+
+MAX_ATTEMPTS = 3
+
+
+def secret_word(words):
+
+
+def guesses():
+
+
+def check_results(secret, guesses):
+
+
+if __name__ == "__main__":
+
