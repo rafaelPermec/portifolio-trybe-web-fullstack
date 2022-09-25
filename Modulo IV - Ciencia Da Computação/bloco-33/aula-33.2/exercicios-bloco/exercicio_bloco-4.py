@@ -10,3 +10,17 @@
 # Python,0.23201856148491878
 # Java,0.23201856148491878
 # PHP,0.23201856148491878
+
+import json
+
+with open('./exercicios-bloco/inputs/books.json', mode='r') as file:
+    all_books = json.load(file)
+
+books_categorie = set()
+
+for book in all_books:
+    for categories in book["categories"]:
+        for category in categories.split(','):
+            books_categorie.add(category)
+
+print(books_categorie)
