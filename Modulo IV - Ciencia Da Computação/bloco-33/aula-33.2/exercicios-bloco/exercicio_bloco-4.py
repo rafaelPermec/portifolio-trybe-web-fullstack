@@ -16,11 +16,15 @@ import json
 with open('./exercicios-bloco/inputs/books.json', mode='r') as file:
     all_books = json.load(file)
 
-books_categorie = set()
 
-for book in all_books:
-    for categories in book["categories"]:
-        for category in categories.split(','):
-            books_categorie.add(category)
+def count_books_by_categorie(books):
+    categories = {}
+    for book in books:
+        for category in book['categories']:
+            if not categories.get(category):
+                categories[category] = 0
+            categories[category] += 1
+    return print(categories)
 
-print(books_categorie)
+
+count_books_by_categorie(all_books)
