@@ -43,8 +43,16 @@ class Log:
 
     def __log(self, nivel, msg):
         for manipulador in self.__manipuladores:
-            manipulador.log(self.formatar(nivel, msg))
+            manipulador.log(self.__formatar(nivel, msg))
 
     def __formatar(self, nivel, msg):
         data = datetime.now().strftime('%d/%m/%Y %H:%M:%S'),
         return f"[{nivel} - {data}]: {msg}"
+
+
+log_em_tela = LogEmTela()
+log = Log([log_em_tela])
+log.erro('''
+ERBONITEZA: Você é bonito(a) demais para estar aqui.
+Pare, ladrão, que roubou meu coração <3
+''')
