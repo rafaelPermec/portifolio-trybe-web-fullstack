@@ -5,17 +5,18 @@ class Eletrodomestico:
         self.__potencia = potencia
         self.__voltagem = voltagem
         self.__ligado = False
-        self.__amperagem_atual_do_motor = 0
+        self.amperagem_atual_do_motor = 0
 
     def ligar(self, velocidade):
         self.__velocidade = velocidade
-        self.__amperagem_atual_do_motor = ((
+        self.amperagem_atual_do_motor = ((
           self.__potencia / self.__voltagem
         ) / self.__velocidade) * velocidade
         self.__ligado = True
 
     def desligar(self):
         self.__ligado = False
+        self.amperagem_atual_do_motor = 0
         self.__velocidade = 0
 
     def esta_ligado(self):
@@ -40,14 +41,14 @@ class Batedeira(Eletrodomestico):
         super().__init__(cor, potencia, voltagem, preco)
 
 
-class Fogão(Eletrodomestico):
+class Fogao(Eletrodomestico):
     def __init__(self, cor, potencia, voltagem, preco):
         super().__init__(cor, potencia, voltagem, preco)
 
 
 microondas = Microondas('Philips - Inox', 450, 127, 400)
 batedeira = Batedeira('Planetaria Inox', 200, 127, 290)
-fogao = Fogão('Preto - 8 bocas', 6000, 127, 8000)
+fogao = Fogao('Preto - 8 bocas', 6000, 127, 8000)
 
 print(f"O Microondas {microondas.cor} custa R${microondas.preco}")
 print(f"A Batedeira {batedeira.cor} custa R${batedeira.preco}")
