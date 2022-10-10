@@ -27,10 +27,6 @@
 #         print(f"You caused {self.character.attack()} of damage to the enemy")
 
 
-# StarWarsGame(Soldier(5)).fight_enemy()
-# StarWarsGame(Jedi(20)).fight_enemy()
-
-
 class Soldier:
     def __init__(self, level):
         self.level = level
@@ -43,7 +39,7 @@ class Jedi:
     def __init__(self, level):
         self.level = level
 
-    def attackWithSaber(self):
+    def attack_with_saber(self):
         return self.level * 100
 
 
@@ -52,7 +48,7 @@ class JediAdapter:
         self.jedi = jedi
 
     def attack(self):
-        return self.jedi.attackWithSaber()
+        return self.jedi.attack_with_saber()
 
 
 class StarWarsGame:
