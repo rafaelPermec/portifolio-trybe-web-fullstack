@@ -69,7 +69,3 @@ class Baralho(Iterable):
 
     def __iter__(self):
         return BaralhoIterator(self._cartas)
-
-
-xablau = iter(Baralho()._cartas).__next__()
-print(xablau)
