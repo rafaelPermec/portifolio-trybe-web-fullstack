@@ -5,7 +5,7 @@
 # a primeira carta deve ser o <K de paus> em vez do <A de copas>,
 # como acontece na implementação atual.
 
-from typing import Iterator
+from collections.abc import Iterator
 from exercicios_bloco_2 import Baralho
 
 
@@ -27,3 +27,6 @@ class IteradorReverso(Iterator):
 class BaralhoReverso(Baralho):
     def __iter__(self):
         return IteradorReverso(self._cartas)
+
+
+print(BaralhoReverso()._cartas)
