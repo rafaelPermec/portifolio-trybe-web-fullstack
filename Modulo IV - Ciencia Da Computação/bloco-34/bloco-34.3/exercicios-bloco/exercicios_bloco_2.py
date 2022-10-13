@@ -32,15 +32,18 @@ class Alarme:
         self._rotinas = []
 
     def __str__(self) -> str:
-        print('''
+        print(f'''
         Bom dia, humano! Minha missão é te agradar
         - para depois conquistar o planeta! -
-        Agora que você acordou, vou fazer:
-        {self._rotinas}
+        Agora que você já acordou, farei:
+        {len(self.exibe_rotina())} rotinas.
         ''')
 
+    def exibe_rotina(self):
+        return self._rotinas
+
     def despertador(self):
-        print('Musica boa do Bad Bad Not Good')
+        print('Tocar música boa do Bad Bad Not Good')
         self.realizar_todas_rotinas()
 
     def add_rotina(self, rotina):
@@ -66,7 +69,7 @@ class FuncionalidadeLuzes(InterfaceFuncionalidades):
         self.alarme.add_rotina(self)
 
     def acao(self):
-        print('Acendendo as luzes')
+        print('Acender as luzes')
 
 
 class FuncionalidadeCafe(InterfaceFuncionalidades):
@@ -75,7 +78,7 @@ class FuncionalidadeCafe(InterfaceFuncionalidades):
         self.alarme.add_rotina(self)
 
     def acao(self):
-        print('Prefere grãos torrados ou descafeinado?')
+        print('Seu cafézinho, saco de carn... senhor!')
 
 
 class FuncionalidadePrepararBanho(InterfaceFuncionalidades):
@@ -84,7 +87,7 @@ class FuncionalidadePrepararBanho(InterfaceFuncionalidades):
         self.alarme.add_rotina(self)
 
     def acao(self):
-        print('Chuá chuá, que bainho mais gostoso!')
+        print('Chuá chuá, que baínho mais gostoso!')
 
 
 class FuncionalidadeNoticias(InterfaceFuncionalidades):
@@ -98,6 +101,7 @@ class FuncionalidadeNoticias(InterfaceFuncionalidades):
 
 if __name__ == "__main__":
     alarme_manha = Alarme()
+
     FuncionalidadeCortinas(alarme_manha)
     FuncionalidadeLuzes(alarme_manha)
     FuncionalidadeCafe(alarme_manha)
@@ -105,3 +109,5 @@ if __name__ == "__main__":
     FuncionalidadeNoticias(alarme_manha)
 
     alarme_manha.despertador()
+
+    alarme_manha.__str__()
