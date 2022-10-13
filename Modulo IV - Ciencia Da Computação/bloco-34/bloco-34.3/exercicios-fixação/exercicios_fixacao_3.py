@@ -38,7 +38,7 @@ class Combo(ABC):
         self.criar_combo()
 
     @abstractmethod
-    def criar_combo():
+    def criar_combo(self):
         pass
 
     def exibe_itens(self):
