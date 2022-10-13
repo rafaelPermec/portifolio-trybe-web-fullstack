@@ -25,6 +25,9 @@ class SystemAccess(ABC):
         pass
 
     def set_permission(self, can_access):
+        """
+        Metodo para setar permissões.
+        """
         pass
 
 
