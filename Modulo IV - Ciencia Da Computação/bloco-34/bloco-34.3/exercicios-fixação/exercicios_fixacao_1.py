@@ -10,7 +10,7 @@ class CalculadoraDecorada:
     def __init__(self, calculadora):
         self.calculadora = calculadora
 
-    def converterNumero(self, numero):
+    def converter_numero(self, numero):
         if not isinstance(numero, str):
             return numero
 
@@ -21,7 +21,7 @@ class CalculadoraDecorada:
 
     def soma(self, x, y):
         return self.calculadora.soma(
-            self.converterNumero(x), self.converterNumero(y)
+            self.converter_numero(x), self.converter_numero(y)
         )
 
 
@@ -29,7 +29,7 @@ class DecoratedCalculator:
     def __init__(self, calculadora):
         self.calculadora = calculadora
 
-    def converterNumero(self, numero):
+    def converter_numero(self, numero):
         if not isinstance(numero, str):
             return numero
 
@@ -40,7 +40,7 @@ class DecoratedCalculator:
 
     def soma(self, x, y):
         return self.calculadora.soma(
-            self.converterNumero(x), self.converterNumero(y)
+            self.converter_numero(x), self.converter_numero(y)
         )
 
 
