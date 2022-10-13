@@ -12,7 +12,7 @@ from exercicios_bloco_2 import Baralho
 class IteradorReverso(Iterator):
     def __init__(self, cartas):
         self._cartas = cartas
-        self._page = 0
+        self._page = -1
 
     def __next__(self):
         try:
@@ -29,4 +29,4 @@ class BaralhoReverso(Baralho):
         return IteradorReverso(self._cartas)
 
 
-print(BaralhoReverso()._cartas)
+print(next(iter(BaralhoReverso())))

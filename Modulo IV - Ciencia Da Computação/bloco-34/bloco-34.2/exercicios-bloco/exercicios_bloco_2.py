@@ -69,3 +69,5 @@ class Baralho(Iterable):
 
     def __iter__(self):
         return BaralhoIterator(self._cartas)
+
+print(next(iter(Baralho())))
