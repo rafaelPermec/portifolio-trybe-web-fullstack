@@ -2,7 +2,6 @@
 # Para isso, basta a string começar com um código da cor antes e
 # terminar com um código que indica o fim da formatação.
 
-# Copiar
 # ROSA = "\033[95m"
 # ROXO = "\033[94m"
 # AZUL = "\033[96m"
@@ -24,6 +23,7 @@
 # class Log:
 #     def dispara_log(message):
 #         return message
+
 # Crie novas classes, LogError(), LogWarning, LogSuccess() com o
 # padrão Decorator, para imprimir colorido as seguintes frases de Log:
 # Success(Verde): O sistema está funcionando
