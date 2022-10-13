@@ -62,7 +62,7 @@ class Account(ABC):
         self.create_account()
 
     @abstractmethod
-    def create_account():
+    def create_account(self):
         pass
 
     def show_permissions(self):
