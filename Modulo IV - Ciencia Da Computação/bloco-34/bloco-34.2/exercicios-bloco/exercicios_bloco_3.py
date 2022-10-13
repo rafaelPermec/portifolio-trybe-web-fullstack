@@ -29,4 +29,4 @@ class BaralhoReverso(Baralho):
         return IteradorReverso(self._cartas)
 
 
-print(BaralhoReverso()._cartas)
+print(next(iter(BaralhoReverso())))
