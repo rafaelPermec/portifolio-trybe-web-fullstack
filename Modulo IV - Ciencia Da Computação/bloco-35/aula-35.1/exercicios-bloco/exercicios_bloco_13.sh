@@ -34,8 +34,12 @@ $cd https-server
 
 # Acesse o servidor no endereço https://localhost:8000/ utilizando o Firefox (precisa ser o Firefox). Perceba que ele vai informar que o certificado não é reconhecido por ele, pois não foi assinado por nenhuma autoridade da confiança dele.
 
+$cd https-server && python3 exercicios_bloco_13.py
+
 # 5.1 Chrome e Safari se recusam a acessar um site cujo certificado não está assinado por NENHUMA autoridade certificadora. Existem instruções para agir como uma autoridade certificadora, mas não precisa seguir por esse caminho.
 
 # Acesse o servidor novamente, porém desta vez utilizando cURL (de fora do Docker, se você estiver usando).
 
 # Por último, vamos utilizar um recurso do cURL, somente para testes (somente utilize, caso realmente você esteja esperando por aquilo), que é o parâmetro -k ou --insecure. Com ele, falamos para o nosso cURL prosseguir a request mesmo sabendo que a conexão não é “confiável”.
+
+$curl --insecure https://localhost:8000
