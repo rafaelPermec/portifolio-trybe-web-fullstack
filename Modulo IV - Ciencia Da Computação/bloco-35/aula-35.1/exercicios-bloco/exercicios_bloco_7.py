@@ -1,6 +1,9 @@
-# Exercício 7: Agora vamos explorar o outro protocolo de transporte que aprendemos. Crie um servidor UDP usando o mesmo módulo socketserver. Nosso servidor UDP deverá:
+# Exercício 7: Agora vamos explorar o outro protocolo de transporte que
+# aprendemos. Crie um servidor UDP usando o mesmo módulo socketserver.
+# Nosso servidor UDP deverá:
 
-# Imprimir no console toda mensagem recebida (não esqueça de converter também para string).
+# Imprimir no console toda mensagem recebida (não esqueça de converter
+# também para string).
 
 # Responder com os dados recebidos (como um eco).
 
