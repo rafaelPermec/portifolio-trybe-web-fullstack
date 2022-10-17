@@ -31,7 +31,7 @@
 # (em Linux, geralmente utf-8, mas confirme com o comando locale).
 from socketserver import TCPServer, StreamRequestHandler
 
-ADDRESS = "", 8085
+ADDRESS = '', 8085
 
 
 class EchoHandler(StreamRequestHandler):
