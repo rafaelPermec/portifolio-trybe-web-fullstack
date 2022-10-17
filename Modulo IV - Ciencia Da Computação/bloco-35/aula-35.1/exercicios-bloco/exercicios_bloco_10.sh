@@ -9,10 +9,8 @@
 # Acesse o o link disponibilizado em seu navegador. Utilize ele para acessar de outros dispositivos, como seu smartphone ou outro computador 😎.
 #! .
 
-$mkdir reuse-server && cd reuse-server
-
 $python3 -m http.server 80
 
 $unzip /ngrok.zip
 
-$./ngrok http 80
+$ngrok http 80
