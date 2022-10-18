@@ -36,6 +36,7 @@ print(f"\n {SUBLINHADO}response.content:{RESET} \n {response.content}")
 
 # Recurso JSON
 response = requests.get("http://httpbin.org/get")
+
 # Equivalente ao json.loads(response.content)
 print(f"\n {SUBLINHADO}response.json():{RESET} \n {response.json()}")
 
