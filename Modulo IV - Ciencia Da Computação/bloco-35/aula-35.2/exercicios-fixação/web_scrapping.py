@@ -19,4 +19,4 @@ prices = selector.css(".product_price .price_color::text").getall()
 for product in selector.css(".product_pod"):
     title = product.css("h3 a::attr(title)").get()
     price = product.css(".price_color::text").get()
-    print(title, price.replace('Â£', ''))
+    print(title, price.replace('Â', ''))
