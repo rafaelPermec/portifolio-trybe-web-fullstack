@@ -1,7 +1,7 @@
 from parsel import Selector
 import requests
 
-response = requests.get("http://books.toscrape.com/")
+response = requests.get("https://books.toscrape.com/")
 selector = Selector(text=response.text)
 
 # O título está no atributo title em um elemento âncora (<a>)
