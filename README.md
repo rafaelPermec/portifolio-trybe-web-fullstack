@@ -173,86 +173,86 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 24: Updates
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [x] 24-1: _Updates Simples_
+- [x] 24-2: _Updates Complexos - Arrays - Parte 1_
+- [x] 24-3: _Updates Complexos - Arrays - Parte 2_
+- [x] 24-4: _[Projeto - Commerce]()_
 
 ##### Bloco 25: Aggregation Framework
 
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [x] 25-1: _Aggregation Framework - Part 1_
+- [x] 25-2: _Aggregation Framework - Part 2_
+- [x] 25-3: _[Projeto - Aggregations]()_
 
 ##### Bloco 26: Intro - NodeJS
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo AssÍncrono
-- [ ] 26-3: _NodeJS - Arquitetura _
-- [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [x] 26-1: _NodeJS - Introdução_
+- [x] 26-2: _NodeJS - Fluxo AssÍncrono
+- [x] 26-3: _NodeJS - Arquitetura _
+- [x] 26-4: _[Projeto - A CLI of Ice and Fire]()_
 
 ##### Bloco 27: NodeJS
 
-- [ ] 27-1: _Express: HTTP com Node.js_
-- [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [x] 27-1: _Express: HTTP com Node.js_
+- [x] 27-2: _Arquitetura de Software - Introdução ao MVC_
+- [x] 27-3: _[Projeto - Cookmaster]()_
 
 ##### Bloco 28: NodeJS
 
-- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
-- [ ] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Store Manager]()_
+- [x] 28-1: _Arquitetura de Software - Camada de Serviço_
+- [x] 28-2: _Arquitetura web - Rest e Restful_
+- [x] 28-3: _[Projeto - Store Manager]()_
 
 ##### Bloco 29: NodeJS
 
-- [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
-- [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
+- [x] 29-1: _NodeJS - JWT - (JSON Web Token)_
+- [x] 29-2: _NodeJS - Upload de arquivos com Multer_
+- [x] 29-3: _[Projeto - Cookmaster V2]()_
 
 ##### Bloco 30: Introdução - Deploy
 
-- [ ] 30-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 30-2: _Deploy - Gerenciadores de Processos_
-- [ ] 30-3: _[Projeto - Stranger Things]()_
+- [x] 30-1: _Infraestrutura - Deploy com Heroku_
+- [x] 30-2: _Deploy - Gerenciadores de Processos_
+- [x] 30-3: _[Projeto - Stranger Things]()_
 
 ##### Bloco 31: Projeto
 
-- [ ] 31-1: _[Projeto - Trybeer]()_
+- [x] 31-1: _[Projeto - Trybeer]()_
 
 ##### Bloco 32: Arquitetura de Software :hourglass_flowing_sand:
 
-- [ ] 32-1: _Arquitetura - PrincÍpios SOLID_
-- [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 32-3: _Arquitetura de Software - DDD_
-- [ ] 32-4: _Boas prá¡ticas na escrita de testes_
-- [ ] 32-3: _[Projeto - API de Blogs]()_
+- [x] 32-1: _Arquitetura - PrincÍpios SOLID_
+- [x] 32-2: _ORM - Interface da aplicação com o banco de dados_
+- [x] 32-3: _Arquitetura de Software - DDD_
+- [x] 32-4: _Boas prá¡ticas na escrita de testes_
+- [x] 32-3: _[Projeto - API de Blogs]()_
 
 ##### Bloco 33: Sockets
 
-- [ ] 30-1: _Sockets - TCP/UDP & NET_
-- [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _[Projeto - Webchat]()_
+- [x] 30-1: _Sockets - TCP/UDP & NET_
+- [x] 30-2: _Sockets - Socket.io_
+- [x] 30-3: _[Projeto - Webchat]()_
 
 ##### Bloco 34: Projeto
 
-- [ ] 34-1: _[Projeto - Trybeer V2]()_
+- [x] 34-1: _[Projeto - Trybeer V2]()_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Bloco 35: Introdução - Ciência da Computação
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [x] 35-1: _Arquitetura de Computadores_
+- [x] 35-2: _Arquitetura de redes_
+- [x] 35-3: _Redes de computadores, ferramentas e segurança_
+- [x] 35-4: _[Projeto - Explorando os protocolos]()_
 
 ##### Bloco 36: Python
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções_
-- [ ] 35-3: _Entrada e Saí­da de dados_
-- [ ] 36-4: _Entrada e Saí­da de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [x] 35-1: _Aprendendo Python_
+- [x] 35-2: _Testes e Exceções_
+- [x] 35-3: _Entrada e Saí­da de dados_
+- [x] 36-4: _Entrada e Saí­da de dados_
+- [x] 35-5: _[Projeto - Tech news]()_
 
 # [...]
 
