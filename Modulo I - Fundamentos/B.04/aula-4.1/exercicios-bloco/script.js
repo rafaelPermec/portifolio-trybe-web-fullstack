@@ -26,16 +26,16 @@ const two = 444;
  }
 
 /* Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.*/
-const a = 42;
-const b = 444;
-const c = 777;
+const c = 42;
+const d = 444;
+const e = 777;
 
-if (a > b > c){
-    console.log(a);
-} else if (b > a > c) {
-    console.log(b);
+if (c > d > c){
+    console.log(c);
+} else if (d > c > c) {
+    console.log(d);
 } else {
-    console.log(c)
+    console.log(e)
 }
 
 /* Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário. */
@@ -90,10 +90,10 @@ let nota = 62;
 
 Bonus: use somente um if . */
 
-let um = 23;
-let dois = 45;
-let tres = 147;
-    if (um % 2 == 0 || dois % 2 == 0 || tres % 2 === 0){
+let tres = 23;
+let quatro = 45;
+let cinco = 147;
+    if (tres % 2 == 0 || quatro % 2 == 0 || cinco % 2 === 0){
         console.log('true');
     } else {
         console.log('false');
@@ -103,10 +103,10 @@ let tres = 147;
 
 Bonus: use somente um if . */
 
-let um = 23;
-let dois = 45;
-let tres = 147;
-    if (um % 2 != 0 || dois % 2 != 0 || tres % 2 !== 0){
+let seis = 23;
+let sete = 45;
+let oito = 147;
+    if (seis % 2 != 0 || sete % 2 != 0 || oito % 2 !== 0){
         console.log('true');
     } else {
         console.log('false');
